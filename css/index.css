@@ -123,38 +123,40 @@ nav .logo img{
 }
 .menu{
     background: rgba(53, 53, 53, .7);
-    /* background-color: #353535; */
     width: 100%;
     height: 100vh;
     z-index: 5;
     position: fixed;
     display: none;
-    /* background: rgba( 255, 255, 255, 0.6 ); */
 backdrop-filter: blur( 10px );
 -webkit-backdrop-filter: blur( 10px );
 }
 
 .menu ul{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: auto;
-    margin-right: 200px;
-    /* display: block; */
-    /* background: #ff3b31; */
+    margin-right:240px;
 }
 .menu li{
     list-style: none;
     text-align: right;
+    transition: .2s ease-in-out transform, .2s ease-out color;
+}
+.menu li:hover{
+    transform: translateX(-20px);
 }
 .menu a{
     color: #fff;
     text-decoration: none;
     font-family: var(--text-rubik);
-    font-size: 80px;
+    font-size: 60px;
 }
+.menu li:hover a{
+    color: var(--color-yellow);
 
+}
 .header{
     position: relative;
-    /* height: 100vh; */
     width: 100%;
     background-color: var(--color-blue);
     overflow: hidden;
@@ -279,14 +281,10 @@ backdrop-filter: blur( 10px );
     justify-content: space-between;
 }
 .servicio-item-img{
-    /* background-color: aqua; */
-    /* border-radius: 5px; */
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     background: rgba( 255, 255, 255, 0.6 );
 backdrop-filter: blur( 6px );
 -webkit-backdrop-filter: blur( 6px );
 border-radius: 10px;
-/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 .servicio-item p{
     text-align: center;
@@ -322,7 +320,6 @@ border-radius: 10px;
 .seccion-pasos{
     background-color: #000;
     width: 100%;
-    /* height: 100vh; */
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: var(--text-rubik);
@@ -344,8 +341,6 @@ border-radius: 10px;
    margin-right: auto;
    margin-left: auto;
    margin-top: 50px;
-   /* margin-bottom: 50px; */
-  
 }
 
 .seccion-pasos-eye .eye{
@@ -446,11 +441,9 @@ border-radius: 10px;
     margin-right: 7px;
 }
 .seccion-tarotistas-item-content a:last-of-type{
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    box-shadow: inset 0 0 0 2px #000;
     color: #000;
-}
-.seccion-tarotistas button{
-
 }
 .seccion-tarotistas button{
     margin-left: auto;
@@ -542,7 +535,7 @@ border-radius: 10px;
     /* margin-left: 100px; */
     position: relative;
 }
-.swiper-wrapper{
+.swiper-testimonio .swiper-wrapper{
     margin-left: 200px;
 }
 .swiper-testimonio-btn-next{
@@ -762,7 +755,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 65px;
     padding-bottom: 25px;
 }
 .subfooter a{

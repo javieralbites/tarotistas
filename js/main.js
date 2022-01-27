@@ -1,8 +1,8 @@
 // NAV 
-// window.addEventListener("scroll", () => {
-//   const nav = document.querySelector("nav");
-//       nav.classList.toggle("sticky", window.scrollY > 0);
-// });
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 0);
+});
 
 // MENU 
 function menuOnClick() {
@@ -48,7 +48,14 @@ var swiper = new Swiper(".swiper-testimonio", {
     nextEl: '.swiper-testimonio-btn-next'
 }
 });
-
+// SLIDE NUESTROS TAROTISTAS
+var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
+  navigation:{
+    prevEl: '.nuestros-tarotistas-btn-prev',
+    nextEl: '.nuestros-tarotistas-btn-next'
+  },
+  loop: true
+})
 // LOGIN 
 function registroActive() {
   document.querySelector(".content-registro").classList.add("active")

@@ -14,28 +14,18 @@
 }
 
 .seccion-slides .slide .slide-img{
-    /* display: block; */
-    /* width: 100%;
-    height: 100%; */
-    overflow: hidden;
-    background-color: tomato;
-    /* background-image: url(./images/tarotistas/tarotista-slide01.png); */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    
+    
 }
 .seccion-slides .slide .slide-img img{
     width: 100%;
     height: 100%;
     margin: auto;
-    /* max-height: 900px; */
-    /* width: 200px;
-    height: 200px; */
+    
     object-fit: cover;
-    /* display: block; */
-    /* overflow: hidden; */
+ 
 }
-.seccion-slides .btn-next{
+.seccion-slides .nuestros-tarotistas-btn-next{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -47,8 +37,10 @@
     justify-content: center;
     align-items: center;
     margin: 30px;
+    z-index: 5;
+    cursor: pointer;
 }
-.seccion-slides .btn-prev{
+.seccion-slides .nuestros-tarotistas-btn-prev{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -60,33 +52,38 @@
     justify-content: center;
     align-items: center;
     margin: 30px;
+    z-index: 5;
+    cursor: pointer;
 }
 .seccion-slides .slide .slide-content{
     padding-top: 150px;
     padding-left: 100px;
     background-color: #EFEFEF;
 }
-.seccion-slides .slide .slide-content p{
+.seccion-slides .slide .slide-content .like{
+    font-weight: bold;
     font-size: 35px;
-    line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
-
-
-.seccion-slides .slide .slide-content button{
-    /* margin-top: 35px; */
-    /* display: block; */
+.seccion-slides .slide .slide-content p{
+    font-size: 1.5em;
+    line-height: 32px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.seccion-slides .slide .slide-content a{
+    margin-top: 40px;
     color: #fff;
     background-color: #000;
     border-radius: 5px;
     border: none;
     font-size: 24px;
     padding: 20px 25px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
 }
-.seccion-slides .slide .slide-content button img{
+.seccion-slides .slide .slide-content a img{
     margin-left: 20px;
 }
 
@@ -104,7 +101,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    /* background-color: wheat; */
 }
 .tarotista-card-img img{
     width: 100%;
@@ -133,12 +129,12 @@
     padding: 13px 15px;
     font-size: 24px;
 }
-.tarotista-card-content a:first-of-type{
+.tarotista-card-content .btn-llamar{
     background-color: #000;
     color: #fff;
     margin-right: 7px;
 }
-.tarotista-card-content a:last-of-type{
-    border: 2px solid #000;
+.tarotista-card-content .btn-ver{
+    box-shadow: inset 0 0 0 2px #000;
     color: #000;
 }
