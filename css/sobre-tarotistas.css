@@ -1,0 +1,113 @@
+.sobre-tarotistas-header{
+    background-color: #fff;
+    font-family: var(--text-rubik);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sobre-tarotistas-header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobre-tarotistas-header h1{
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: normal;
+}
+.sobre-tarotistas-header a{
+    color: #fff;
+    background-color: var(--color-blue);
+    padding: 20px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.sobre-tarotistas-header a img{
+    margin-left: 15px;
+}
+.sobre-tarotistas-about{
+    background-color: var(--color-yellow);
+    font-family: var(--text-rubik);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sobre-tarotistas-container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.sobre-tarotistas-about-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobre-tarotistas-about h1{
+    font-size: 80px;
+    line-height: 95px;
+    color: var(--color-blue);
+    font-weight: normal;
+}
+.sobre-tarotistas-about img{
+    /* transform: scaleX(.5); */
+    width: 150px;
+}
+.sobre-tarotistas-about p{
+    font-size: 35px;
+    line-height: 42px;
+    color: #000;
+}
+
+.sobre-tarotistas-faq{
+    background-color: var(--color-grey-light);
+    font-family: var(--text-rubik);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sobre-tarotistas-faq h1{
+    text-align: center;
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.sobre-tarotistas-faq-container{
+    width: 700px;
+    margin-left: auto;margin-right: auto;
+}
+.faq{
+    margin-bottom: 10px;
+}
+.faq-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    font-size: 35px;
+    cursor: pointer;
+}
+.faq-header.active{
+    border-bottom: 2px solid var(--color-blue);
+}
+.faq-header img{
+    transition: .5s linear transform;
+}
+.faq-header.active img{
+    transform: rotate(45deg);
+    filter: invert(10%) sepia(99%) saturate(7384%) hue-rotate(259deg) brightness(89%) contrast(115%);
+}
+.faq-content{
+    max-height: 0px;
+    padding: 0px 20px;
+    font-size: 24px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+.faq-content.active{
+    max-height: 15rem;
+    padding: 20px;
+}

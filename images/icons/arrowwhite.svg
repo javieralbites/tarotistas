@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.548" height="24.45" viewBox="0 0 29.548 24.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-6 -6)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(7 7)">
+      <path id="Trazado_65" data-name="Trazado 65" class="cls-1" d="M171.975,29.45c0-5.439,11.157-11.157,11.157-11.157S171.84,12.087,171.84,7" transform="translate(-155.584 -7)"/>
+      <line id="Línea_2" data-name="Línea 2" class="cls-1" x1="27.189" transform="translate(0 11.266)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.731" height="28.314" viewBox="0 0 51.731 28.314">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #b47bff;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1" transform="translate(1 -14.069)">
+    <path id="Trazado_730" data-name="Trazado 730" class="cls-1" d="M0,60.995a30.288,30.288,0,0,1,49.731,0S43.018,73.88,25.558,74.3A29.739,29.739,0,0,1,0,60.995Z" transform="translate(0 -32.931)"/>
+    <circle id="Elipse_15" data-name="Elipse 15" class="cls-2" cx="9.575" cy="9.575" r="9.575" transform="translate(15.291 18.984)"/>
+    <circle id="Elipse_18" data-name="Elipse 18" cx="5.131" cy="5.131" r="5.131" transform="translate(19.735 23.428)"/>
+    <ellipse id="Elipse_17" data-name="Elipse 17" class="cls-3" cx="1.485" cy="1.485" rx="1.485" ry="1.485" transform="translate(24.845 26.38)"/>
+  </g>
+</svg>

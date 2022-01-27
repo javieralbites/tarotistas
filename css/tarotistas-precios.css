@@ -1,0 +1,201 @@
+.tarotistas-precios-header {
+    width: 100%;
+    background-color: var(--color-blue);
+    /* height: 100vh; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: var(--text-rubik);
+
+}
+
+.tarotistas-precios-header-container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarotistas-precios-header h1 {
+    color: var(--color-yellow);
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: normal;
+}
+
+.tarotistas-precios-header h1 img {
+    position: absolute;
+    margin-left: 25px;
+}
+
+.tarifas {
+    display: flex;
+}
+
+.tarifa-arcana-mayor {
+    width: 391px;
+    height: 576px;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 60px 50px;
+    position: relative;
+    /* display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.tarifa-arcana-mayor .square {
+    background-color: #AAA;
+    border-radius: 10px;
+    width: 117px;
+    height: 126px;
+}
+
+.tarifa-arcana-mayor p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.tarifa-arcana-mayor .time {
+    color: var(--color-purple);
+    font-size: 80px;
+    line-height: 95px;
+}
+
+.tarifa-arcana-mayor .price {
+    font-size: 35px;
+    line-height: 42px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.tarifa-arcana-mayor a {
+    font-size: 24px;
+    color: #fff;
+    background-color: var(--color-blue);
+    padding: 20px 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.tarifa-arcana-mayor a img {
+    height: 22px;
+    margin-left: 15px;
+}
+
+.tarifa-arcana-mayor .planet {
+    position: absolute;
+}
+
+.tarifa-arcana-mayor .planet-green {
+    top: -60px;
+    right: -10px;
+}
+
+.tarifa-arcana-mayor .planet-yellow {
+    bottom: -30px;
+    left: -60px;
+}
+
+.tarifa-arcana-mayor .planet-purple {
+    top: -20px;
+    left: -30px;
+}
+
+.tarifa-arcana-mayor .planet-orange {
+    top: 50%;
+    right: -10px;
+}
+
+.tarifa-arcana-mayor .planet-blue {
+    top: 20px;
+    right: 80px;
+}
+
+.tarifa-arcana-menor {
+    width: 391px;
+    height: 576px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 60px 50px;
+}
+
+.tarifa-arcana-menor .square {
+    background-color: #AAA;
+    border-radius: 10px;
+    width: 117px;
+    height: 126px;
+}
+
+.tarifa-arcana-menor p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 25px;
+}
+
+.tarifa-arcana-menor .time {
+    color: var(--color-blue);
+    font-size: 80px;
+    line-height: 95px;
+}
+
+.tarifa-arcana-menor .price {
+    font-size: 35px;
+    line-height: 42px;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.tarifa-arcana-menor a {
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.tarifa-arcana-menor a img {
+    height: 22px;
+    margin-left: 15px;
+}
+
+
+
+.tarotistas-precios-consulta {
+    background-color: var(--color-grey-light);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: var(--text-rubik);
+}
+
+.tarotistas-precios-consulta h1 {
+    color: var(--color-blue);
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.tarotistas-precios-consulta h1 img {
+    transform: translateY(40px) translateX(50px);
+    position: absolute;
+}
+
+.tarotistas-precios-consulta p {
+    color: #000;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+}

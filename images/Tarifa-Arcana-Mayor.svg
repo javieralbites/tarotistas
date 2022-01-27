@@ -1,0 +1,86 @@
+<svg id="Tarifa-Arcana-Mayor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="479.555" height="707.419" viewBox="0 0 479.555 707.419">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Elipse_117" data-name="Elipse 117" cx="45.116" cy="45.116" rx="45.116" ry="45.116" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.146" y1="0.146" x2="0.854" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffff0c"/>
+      <stop offset="0.22" stop-color="#fff60c"/>
+      <stop offset="0.57" stop-color="#ffde0c"/>
+      <stop offset="0.98" stop-color="#ffba0d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.298" y1="0.287" x2="0.921" y2="0.944" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f50"/>
+      <stop offset="0.2" stop-color="#f65201"/>
+      <stop offset="0.52" stop-color="#de4805"/>
+      <stop offset="0.93" stop-color="#b7390a"/>
+      <stop offset="1" stop-color="#af360b"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <ellipse id="Elipse_125" data-name="Elipse 125" cx="84.772" cy="84.772" rx="84.772" ry="84.772" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.639" y1="-0.613" x2="0.408" y2="1.589" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#49e295"/>
+      <stop offset="0.21" stop-color="#40d990"/>
+      <stop offset="0.55" stop-color="#28c284"/>
+      <stop offset="0.97" stop-color="#019c6f"/>
+      <stop offset="0.98" stop-color="#009b6f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1.015" y1="-2.683" x2="0.548" y2="0.26" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-5" x1="0.728" y1="-0.918" x2="0.428" y2="0.733" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-6" x1="1.007" y1="-1.858" x2="0.387" y2="1.289" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-7" x1="0.909" y1="-2.923" x2="0.496" y2="0.575" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-8" x1="0.298" y1="0.287" x2="0.921" y2="0.944" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#563ffc"/>
+      <stop offset="0.28" stop-color="#5236fa"/>
+      <stop offset="0.73" stop-color="#461ef6"/>
+      <stop offset="1" stop-color="#3e0cf2"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectángulo_2621" data-name="Rectángulo 2621" width="401" height="586" rx="16" transform="translate(463.777 686.098) rotate(180)"/>
+  <text id="USD_19.5" data-name="USD 19.5" transform="translate(123.777 477.098)" fill="#efefef" font-size="35" font-family="Rubik-Regular, Rubik"><tspan x="0" y="33">USD 19.5</tspan></text>
+  <text id="Tarifa_Arcana_Mayor" data-name="Tarifa
+Arcana Mayor" transform="translate(123.777 321.098)" fill="#fff" font-size="24" font-family="Rubik-Regular, Rubik"><tspan x="0" y="22">Tarifa</tspan><tspan x="0" y="52">Arcana Mayor</tspan></text>
+  <text id="_20_min" data-name="20 min" transform="translate(123.777 393.555)" fill="#b47bff" font-size="80" font-family="Rubik-Regular, Rubik"><tspan x="0" y="75">20 min</tspan></text>
+  <g id="Grupo_460" data-name="Grupo 460" transform="translate(-466.223 550.098)">
+    <rect id="Rectángulo_2357" data-name="Rectángulo 2357" width="237.548" height="72" rx="8" transform="translate(590)" fill="#3e0cf2"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(769 25)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(7)">
+        <path id="Trazado_65" data-name="Trazado 65" d="M171.975,29.45c0-5.439,11.157-11.157,11.157-11.157S171.84,12.087,171.84,7" transform="translate(-155.584 -7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Línea_2" data-name="Línea 2" x1="27.189" transform="translate(0 11.266)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <text id="Separar_Cita" data-name="Separar Cita" transform="translate(614 44)" fill="#fff" font-size="24" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">Separar Cita</tspan></text>
+  </g>
+  <rect id="Rectángulo_2623" data-name="Rectángulo 2623" width="117" height="126" rx="8" transform="translate(123.777 165.098)" fill="#aaa"/>
+  <g id="Grupo_476" data-name="Grupo 476" transform="translate(33.545 79.312)">
+    <ellipse id="Elipse_116" data-name="Elipse 116" cx="45.116" cy="45.116" rx="45.116" ry="45.116" transform="translate(0 0)" fill="#b47bff"/>
+    <g id="Grupo_458" data-name="Grupo 458" clip-path="url(#clip-path)">
+      <path id="Trazado_1086" data-name="Trazado 1086" d="M364.3,484.6s19.014.268,25.98,13.124,19.674,17.548,30.257,21.165,19.406,17.254,18.55,18.55" transform="translate(-341.058 -481.398)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_1087" data-name="Trazado 1087" d="M350.36,498.54s19.014.269,25.98,13.124,19.7,17.523,30.281,21.14,19.406,17.279,18.526,18.55" transform="translate(-361.187 -461.269)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_1088" data-name="Trazado 1088" d="M370.27,481.34s17.108.245,23.267,11.78,17.646,15.715,27.128,18.941,17.4,15.471,16.619,16.62" transform="translate(-332.437 -486.106)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_1089" data-name="Trazado 1089" d="M348.87,505.46s17.108.244,23.267,11.78,17.621,15.69,27.1,18.941,17.4,15.471,16.619,16.619" transform="translate(-363.339 -451.277)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_1090" data-name="Trazado 1090" d="M357.57,487.88S379.1,488.2,386.9,502.74s22.289,19.87,34.216,23.951,22,19.552,20.994,20.994" transform="translate(-350.776 -476.662)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_1091" data-name="Trazado 1091" d="M352.55,492.9s21.532.318,29.328,14.859,22.289,19.87,34.216,23.951,22,19.552,20.994,20.994" transform="translate(-358.025 -469.413)" fill="none" stroke="rgba(112,112,112,0.23)" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+  <ellipse id="Elipse_235" data-name="Elipse 235" cx="55.653" cy="55.653" rx="55.653" ry="55.653" transform="translate(0 596.112)" fill="url(#linear-gradient)"/>
+  <g id="Grupo_477" data-name="Grupo 477" transform="translate(429.668 349.169)">
+    <ellipse id="Elipse_121" data-name="Elipse 121" cx="24.943" cy="24.943" rx="24.943" ry="24.943" fill="url(#linear-gradient-2)"/>
+    <ellipse id="Elipse_122" data-name="Elipse 122" cx="21.531" cy="21.531" rx="21.531" ry="21.531" transform="translate(0.019)" fill="#f50"/>
+  </g>
+  <g id="Grupo_478" data-name="Grupo 478" transform="translate(310.008)">
+    <ellipse id="Elipse_124" data-name="Elipse 124" cx="84.772" cy="84.772" rx="84.772" ry="84.772" fill="#49e295"/>
+    <g id="Grupo_459" data-name="Grupo 459" clip-path="url(#clip-path-2)">
+      <path id="Trazado_1092" data-name="Trazado 1092" d="M462.539,376.56s-10.177,29.826-19.61,32.415c0,0,14.982,6.1,18.727,2.608s-16.335,10.609-26.9,12.668c-9.628,1.961-15.59,17.648-19.472,37.807,0,0,12.393-19.825,20.531-2.157,0,0-4.8-11.413,10.217-16.943s9.609,17,9.609,17,18.668-5.412,19.982-20.433,4.883-34.513,13.55-29.708,23.865,4.137,23.865,4.137Z" transform="translate(-353.647 -384.639)" fill="url(#linear-gradient-3)"/>
+      <path id="Trazado_1093" data-name="Trazado 1093" d="M419.05,497.339s.647-23.375,18.865-30.65S465.191,437,465.191,437s6,13.413-1.667,24.178-18.61,33.611-17.178,38.18S419.05,497.339,419.05,497.339Z" transform="translate(-350.024 -326.559)" fill="url(#linear-gradient-4)"/>
+      <path id="Trazado_1094" data-name="Trazado 1094" d="M420.771,402.213s-12.844,10.55-12.256,26.748-8.079,22.845-14.158,22.982-17.335,8.354-18,20.61S406.4,512.183,406.4,512.183s-8.354-31.022,6.138-37.415S426.379,446.3,426.379,446.3s-6.589,14.982-10.883,13.393,4.255-27.453,14.178-25.61,6.157,14.884,6.157,14.884,8.648-8.9,1.961-24.649,6.628-22.022,13.727-23.728C451.577,400.585,434.5,394,420.771,402.213Z" transform="translate(-391.062 -363.954)" fill="url(#linear-gradient-5)"/>
+      <path id="Trazado_1095" data-name="Trazado 1095" d="M486.579,409.56s-24.041,11.923-25.316,31.846-4.981,26.63-7.158,27.846,12.825-5.883,17.158-18.551c0,0,6.373,3.922,1.863,11.256a41.9,41.9,0,0,0,14.825-17.649C494.03,431.738,486.579,409.56,486.579,409.56Z" transform="translate(-316.544 -352.928)" fill="url(#linear-gradient-6)"/>
+      <path id="Trazado_1096" data-name="Trazado 1096" d="M433.179,438.361c-2.235,4.177-17.825,9.06-21.355,20.237s-2.216,16.805-8.844,21.257c0,0,12.1,5.883,18.06-3.706s10.021,5.412,10.021,5.412,4.2-12.236-1.451-20.531S445,428.2,457.553,433.713c0,0-20.845-14.335-38.847,1.667C418.707,435.38,438.12,429.144,433.179,438.361Z" transform="translate(-365.467 -335.391)" fill="url(#linear-gradient-7)"/>
+    </g>
+  </g>
+  <g id="Grupo_479" data-name="Grupo 479" transform="translate(295.828 126.031)">
+    <ellipse id="Elipse_119" data-name="Elipse 119" cx="43.514" cy="43.514" rx="43.514" ry="43.514" fill="url(#linear-gradient-8)"/>
+    <ellipse id="Elipse_120" data-name="Elipse 120" cx="37.572" cy="37.572" rx="37.572" ry="37.572" fill="#3e0cf2"/>
+  </g>
+</svg>

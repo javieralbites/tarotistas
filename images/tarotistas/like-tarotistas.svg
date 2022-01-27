@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.163" height="36.256" viewBox="0 0 35.163 36.256">
+  <g id="like-tarotistas" transform="translate(1.414 1)">
+    <g id="Layer_1" data-name="Layer 1">
+      <line id="Línea_3" data-name="Línea 3" y1="8.602" transform="translate(16.165 0)" fill="none" stroke="#ff3b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Línea_4" data-name="Línea 4" x1="6.083" y1="6.083" transform="translate(0 4.035)" fill="none" stroke="#ff3b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Línea_5" data-name="Línea 5" y1="6.083" x2="6.083" transform="translate(26.252 4.035)" fill="none" stroke="#ff3b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_68" data-name="Trazado 68" d="M31.678,29.706a7.625,7.625,0,0,0-10.792,0L19.84,30.751,18.8,29.706A7.63,7.63,0,0,0,8.039,40.5l6.418,6.418a7.641,7.641,0,0,0,10.8,0L31.678,40.5a7.625,7.625,0,0,0,0-10.792Z" transform="translate(-3.691 -13.897)" fill="#ff3b31"/>
+    </g>
+  </g>
+</svg>

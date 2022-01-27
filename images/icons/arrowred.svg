@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113.371" height="93.314" viewBox="0 0 113.371 93.314">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff3b31;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-0.542 -1.003)">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Grupo_372" data-name="Grupo 372" transform="translate(-813.339 -451.117)">
+        <path id="Trazado_754" data-name="Trazado 754" class="cls-1" d="M172.372,95.314c0-21.4,43.889-43.889,43.889-43.889S171.84,27.011,171.84,7" transform="translate(708.491 447.621)"/>
+        <line id="Línea_21" data-name="Línea 21" class="cls-1" x1="106.958" transform="translate(816.381 498.94)"/>
+      </g>
+    </g>
+  </g>
+</svg>
