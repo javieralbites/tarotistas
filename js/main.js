@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=> {
   var tl = gsap.timeline()
-  tl.to('.loadingPano img', {opacity: 0, delay:3, })
+  tl.to('.loadingPano img', {opacity: 0, delay:1, })
   tl.to('.loadingPano', {y:'-100%',delay:.5, duration:0.5, ease: 'power4'})
   tl.from('.nav-container .logo',{opacity:0})
   tl.from('.nav-links a ', {opacity:0, stagger:.2})
@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
 function menuOnClick() {
   document.querySelector(".menu-btn").classList.toggle("change");
   document.querySelector(".menu").classList.toggle("change");
-  var tl = gsap.timeline()
+  // var tl = gsap.timeline()
   // tl.from('.menu ul li', {
   //   opacity:1,
   //   delay:5
@@ -51,22 +51,18 @@ acc_btns.forEach((btn) => {
 });
 
 // SLIDES HOME 
-var swiper = new Swiper(".swiper-testimonio", {
+var swiperHome = new Swiper(".swiper-testimonio", {
   slidesPerView: "auto",
   spaceBetween: 250,
   centeredSlides: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
   loop: true,
   navigation: {
-    prevEl: '.btn-prev',
     nextEl: '.swiper-testimonio-btn-next'
 }
 });
 // SLIDE NUESTROS TAROTISTAS
 var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
+  // effect: "fade",
   navigation:{
     prevEl: '.nuestros-tarotistas-btn-prev',
     nextEl: '.nuestros-tarotistas-btn-next'

@@ -2,7 +2,7 @@ body{
     background-color: #393939;
 }
 .cardLogin{
-    width: 678px;
+    width: 578px;
     background-color: #fff;
     font-family: var(--text-rubik);
     border-radius: 10px;
@@ -14,18 +14,19 @@ body{
 }
 .tabHeader{
     display: flex;
-    /* background-color: #fff; */
 }
 .tabHeader div{
     width: 50%;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /* padding-top: auto;
     padding-bottom: auto; */
     background-color: #e6e6e6;
     color: #aaa;
     cursor: pointer;
-    height: 96px;
+    /* height: 96px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +46,7 @@ body{
     border-radius: 0 10px 0 10px;
 }
 .tab-content{
-    width: 536px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -137,6 +138,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     font-weight: lighter;
+    color: #4e4e4e;
 }
 
 .content-iniciarSesion > p{
