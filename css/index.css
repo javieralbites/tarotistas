@@ -203,7 +203,7 @@ padding-right: 200px;
     height: 70px;
     user-select: none;
 }
-.header button{
+.header > a{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -212,18 +212,22 @@ padding-right: 200px;
     color: #fff;
     text-align: center;
     font-family: var(--text-rubik);
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    outline: none;
+    /* outline: none; */
     border: none;
     border-radius: 5px;
-    padding: 15px ;
+    padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
-
+    
 }
-.header button img{
+.header a img{
     margin-left: 25px;
+    transition: .2s ease-out transform;
+}
+.header a:hover img{
+    transform: translateX(10px);
 }
 .scroll-text{
     display: flex;

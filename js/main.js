@@ -23,10 +23,10 @@ function menuOnClick() {
   // })
 }
 
-gsap.from('.menu ul li', {
-  opacity: 0,
-  x:30
-})
+// gsap.from('.menu ul li', {
+//   opacity: 0,
+//   x:30
+// })
 
 // SOBRE TAROTISTAS FAQ ACCORDEON 
 const acc_btns = document.querySelectorAll(".faq-header");

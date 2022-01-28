@@ -82,9 +82,14 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .seccion-slides .slide .slide-content a img{
+    transition: .2s ease transform;
     margin-left: 20px;
+}
+.seccion-slides .slide .slide-content a:hover img{
+    transform: translateX(10px);
 }
 
 /* seccion-tarotistas-grid */
