@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', ()=> {
+  var tl = gsap.timeline()
+  tl.to('.loadingPano img', {opacity: 0, delay:3, })
+  tl.to('.loadingPano', {y:'-100%',delay:.5, duration:0.5, ease: 'power4'})
+  tl.from('.nav-container .logo',{opacity:0})
+  tl.from('.nav-links a ', {opacity:0, stagger:.2})
+})
+
 // NAV 
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
@@ -8,8 +16,17 @@ window.addEventListener("scroll", () => {
 function menuOnClick() {
   document.querySelector(".menu-btn").classList.toggle("change");
   document.querySelector(".menu").classList.toggle("change");
+  var tl = gsap.timeline()
+  // tl.from('.menu ul li', {
+  //   opacity:1,
+  //   delay:5
+  // })
 }
 
+gsap.from('.menu ul li', {
+  opacity: 0,
+  x:30
+})
 
 // SOBRE TAROTISTAS FAQ ACCORDEON 
 const acc_btns = document.querySelectorAll(".faq-header");

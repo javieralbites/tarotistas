@@ -13,10 +13,25 @@
 body{
     /* overflow-x: hidden; */
 }
-.container{
-    width: 1280px;
+.loadingPano {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+}
+.loadingPano img{
+    animation: rotatetext 5s infinite linear;
+}
+.nav-container{
+    /* width: 1380px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+    padding-right: 80px;
+    padding-left: 80px;
 }
 nav{
     position: fixed;
@@ -26,6 +41,7 @@ nav{
     z-index: 10;
     padding-top: 10px;
     padding-bottom: 10px;
+    transition: all .2s ease-out;
 }
 nav.sticky{
     background: rgba(0, 0, 0, .2);
@@ -38,7 +54,7 @@ nav > div {
     align-items: center;
 }
 nav .logo img{
-    height: 60px;
+    height: 50px;
 }
 .nav-links{
     display: flex;
@@ -51,15 +67,16 @@ nav .logo img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* padding: 15px 20px; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 17px 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     border-radius: 5px;
-    font-size: 24px;
-    height: 72px;
+    font-size: 20px;
+    /* height: 72px; */
 }
 .nav-links a:nth-child(1){
-    border: 2px #fff solid;
+    /* border: 2px #fff solid; */
+    box-shadow: inset 0 0 0 2px #fff;
 }
 .nav-links a:nth-child(2){
     background-color: #000;
@@ -71,9 +88,9 @@ nav .logo img{
 }
 .menu-btn{
     /* display: inline-flex; */
-    height: 80px;
-    width: 80px;
-    margin-left: 35px;
+    height: 70px;
+    width: 70px;
+    margin-left: 50px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -124,18 +141,21 @@ nav .logo img{
 .menu{
     background: rgba(53, 53, 53, .7);
     width: 100%;
+    min-height: 800px;
     height: 100vh;
     z-index: 5;
     position: fixed;
     display: none;
 backdrop-filter: blur( 10px );
 -webkit-backdrop-filter: blur( 10px );
+padding-top: 150px;
+padding-right: 200px;
 }
 
 .menu ul{
-    margin-top: 150px;
-    margin-bottom: auto;
-    margin-right:240px;
+    /* margin-top: 150px; */
+    /* margin-bottom: auto; */
+    /* margin-right:200px; */
 }
 .menu li{
     list-style: none;
@@ -160,6 +180,7 @@ backdrop-filter: blur( 10px );
     width: 100%;
     background-color: var(--color-blue);
     overflow: hidden;
+    height: 90vh;
 }
 .header::-webkit-scrollbar{
     /* display: none; */
@@ -171,11 +192,16 @@ backdrop-filter: blur( 10px );
     font-size: 80px;
     font-weight: normal;
 }
+.header h1::selection{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
 .header h1:nth-child(1){
     padding-top: 160px;
 }
 .header h1 img{
     height: 70px;
+    user-select: none;
 }
 .header button{
     margin-left: auto;
