@@ -180,7 +180,7 @@ padding-right: 200px;
     width: 100%;
     background-color: var(--color-blue);
     overflow: hidden;
-    height: 90vh;
+    height: 95vh;
 }
 .header::-webkit-scrollbar{
     /* display: none; */
@@ -203,10 +203,12 @@ padding-right: 200px;
     height: 70px;
     user-select: none;
 }
-.header > a{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+.header > div{
+    display: flex;
+    justify-content: center;
+}
+.header > div a{
+    margin-top: 50px;
     margin-bottom: 60px;
     background-color: #000;
     color: #fff;
@@ -214,68 +216,17 @@ padding-right: 200px;
     font-family: var(--text-rubik);
     display: inline-flex;
     align-items: center;
-    /* outline: none; */
-    border: none;
     border-radius: 5px;
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
-    
 }
-.header a img{
+.header > div a img{
     margin-left: 25px;
     transition: .2s ease-out transform;
 }
 .header a:hover img{
     transform: translateX(10px);
-}
-.scroll-text{
-    display: flex;
-    width: 120%;
-    margin-bottom: 50px;
-}
-.scroll-text1{
-    background-color: #000;
-    transform: rotate(-5deg) translateX(-10px) translateY(20px);
-    color: var(--color-purple);
-}
-.scroll-text2{
-    color: var(--color-purple);
-    background-color: var(--color-yellow);
-    transform: rotate(4deg) translateX(-10px) translateY(-90px);
-}
-.scroll-text div{
-    /* color: white; */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 4em;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-family: var(--text-rubik);
-    animation: scroll-text 40s linear infinite;
-    animation-delay: -40s;
-    word-spacing: 1em;
-}
-.scroll-text div:nth-child(2){
-    animation: scroll-text2 40s linear infinite;
-    animation-delay: -20s
-}
-@keyframes scroll-text {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-}
-@keyframes scroll-text2 {
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(-200%);
-    }
 }
 
 .servicios{
@@ -286,6 +237,15 @@ padding-right: 200px;
     /* display: block; */
     position: relative;
     background-color: #EFEFEF;
+}
+.servicios .triangulo{
+    position: absolute;
+    top: 0;left: 0;right: 0;
+    margin-left: auto;margin-right: auto;
+    background-color: var(--color-blue);
+    width: 90px;
+    height: 30px;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
 .servicios-back-text{
     position: absolute;
