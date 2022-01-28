@@ -60,9 +60,10 @@ nav {
 }
 
 nav.sticky {
-    background: rgba(0, 0, 0, .2);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    /* background: rgba(0, 0, 0, .2); */
+    background: rgba(53, 53, 53, .7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 nav>div {
@@ -180,8 +181,8 @@ nav .logo img {
     z-index: 5;
     position: fixed;
     display: none;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding-top: 150px;
     padding-right: 200px;
 }
@@ -461,8 +462,6 @@ nav .logo img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    /* justify-content: space-between;
-    align-items: center; */
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -626,8 +625,8 @@ nav .logo img {
     margin-top: auto;
     margin-bottom: auto;
     z-index: 10;
-    width: 164px;
-    height: 164px;
+    width: 154px;
+    height: 154px;
     border-radius: 50%;
     border: 2px solid var(--color-blue);
     display: flex;
@@ -646,18 +645,14 @@ nav .logo img {
     position: absolute;
     z-index: -1;
     left: -100%;
-    transition: .2s linear left
+    opacity: 0;
+    transition: .2s ease-out left, .3s linear opacity
 }
 .swiper-testimonio-btn-next:hover::before{
-    left: 0;
-}
-.swiper-testimonio-btn-next:hover {
-    /* border: 2px solid #fff; */
+    left: 0; 
+    opacity: 1;
 }
 
-.swiper-testimonio-btn-next:hover img {
-    /* filter: invert(99%) sepia(2%) saturate(238%) hue-rotate(161deg) brightness(114%) contrast(100%); */
-}
 
 /* SECCION-PREGUNTAS  */
 .seccion-preguntas {

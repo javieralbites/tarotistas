@@ -35,14 +35,10 @@
 .nuestros-tarotistas-slider-btn::before{
     content: '';
     position: absolute;
-    
     width: 100%;
     height: 100%;
     border-radius: 50%;
     opacity: 0;
-    /* background-color: var(--color-grey-light); */
- 
-    
 }
 .nuestros-tarotistas-slider-btn img{
     width: 60px;
@@ -79,8 +75,9 @@
     opacity: 1;
 }
 .nuestros-tarotistas-slider-btn-prev:hover img{
-    filter: invert(10%) sepia(85%) saturate(7228%) hue-rotate(257deg) brightness(91%) contrast(112%);}
-
+    filter: invert(75%) sepia(5%) saturate(14%) hue-rotate(339deg) brightness(90%) contrast(95%);
+    /* filter: invert(10%) sepia(85%) saturate(7228%) hue-rotate(257deg) brightness(91%) contrast(112%);} */
+}
 .seccion-slides .slide .slide-content{
     padding-top: 150px;
     padding-left: 100px;
