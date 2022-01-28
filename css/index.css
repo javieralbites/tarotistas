@@ -12,6 +12,13 @@
     --color-purple: #B47BFF;
     --color-grey-light: #EFEFEF;
     --text-rubik: 'Rubik', sans-serif;
+    --text-light: 300;
+    --text-regular: 400;
+    --text-medium: 500;
+    --text-semibold: 600;
+    --text-bold: 700;
+    --text-extrabold: 800;
+    --text-black: 900;
 }
 
 body {
@@ -632,14 +639,24 @@ nav .logo img {
 
 .swiper-testimonio-btn-next::before {
     content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-grey-light);
+    position: absolute;
+    z-index: -1;
+    left: -100%;
+    transition: .2s linear left
 }
-
+.swiper-testimonio-btn-next:hover::before{
+    left: 0;
+}
 .swiper-testimonio-btn-next:hover {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
 }
 
 .swiper-testimonio-btn-next:hover img {
-    filter: invert(99%) sepia(2%) saturate(238%) hue-rotate(161deg) brightness(114%) contrast(100%);
+    /* filter: invert(99%) sepia(2%) saturate(238%) hue-rotate(161deg) brightness(114%) contrast(100%); */
 }
 
 /* SECCION-PREGUNTAS  */

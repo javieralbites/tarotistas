@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
   var tl = gsap.timeline()
   tl.to('.loadingPano img', {opacity: 0, delay:1, })
   tl.to('.loadingPano', {y:'-100%',delay:.5, duration:0.5, ease: 'power4'})
-  tl.from('.nav-container .logo',{opacity:0})
-  tl.from('.nav-links a ', {opacity:0, stagger:.2})
+  tl.from('.nav-container .logo',{opacity:0,duration:1})
+  tl.from('.nav-links a ', {opacity:0,duration:1, stagger:.2})
 })
 
 // NAV 
@@ -64,8 +64,8 @@ var swiperHome = new Swiper(".swiper-testimonio", {
 var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
   // effect: "fade",
   navigation:{
-    prevEl: '.nuestros-tarotistas-btn-prev',
-    nextEl: '.nuestros-tarotistas-btn-next'
+    prevEl: '.nuestros-tarotistas-slider-btn-prev',
+    nextEl: '.nuestros-tarotistas-slider-btn-next'
   },
   loop: true
 })
