@@ -719,10 +719,12 @@ nav .logo img {
 
 .seccion-preguntas h1 img {
     /* height: 50px; */
-    position: absolute;
-    right: 10%;
-    bottom: -5%;
+    /* position: absolute; */
+    /* right: 10%; */
+    /* bottom: -5%; */
     height: 50px;
+    margin-left: 15px;
+    transform: translateY(10px);
 }
 
 .seccion-preguntas form input[type=email] {
