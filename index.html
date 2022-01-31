@@ -55,19 +55,20 @@
         <div>
             <a>Consulta tu Vidente <img src="./images/icons/arrowwhite.svg"></a>
         </div>
+        <img class="header-anim-triangle-yellow" src="./images/icons/triangle-yellow.svg">
         <lottie-player class="header-anim-de-letras" src="./images/animaciones/animacion-de-letras.json"
             background="transparent" speed="1" style="width: 105%; height: auto;" loop autoplay></lottie-player>
-        <lottie-player class="header-anim-effect" src="./images/animaciones/effect.json" background="transparent" speed="1"
-            style="width: auto; height: 300px;" loop autoplay></lottie-player>
-            <lottie-player class="header-anim-star1" src="./images/animaciones/little-star1.json" background="transparent" speed="1"
-            style="width: auto; height: auto;" loop autoplay></lottie-player>
-            <lottie-player class="header-anim-star2" src="./images/animaciones/little-star2.json" background="transparent" speed="1"
-            style="width: auto; height: auto;" loop autoplay></lottie-player>
-            <lottie-player class="header-anim-star" src="./images/animaciones/star.json" background="transparent" speed="1"
+        <lottie-player class="header-anim-effect" src="./images/animaciones/effect.json" background="transparent"
+            speed=".1" style="width: auto; height: 300px;" loop autoplay></lottie-player>
+        <lottie-player class="header-anim-star1" src="./images/animaciones/little-star1.json" background="transparent"
+            speed="1" style="width: auto; height: 30px;" loop autoplay></lottie-player>
+        <lottie-player class="header-anim-star2" src="./images/animaciones/little-star2.json" background="transparent"
+            speed="1" style="width: auto; height: 30px;" loop autoplay></lottie-player>
+        <lottie-player class="header-anim-star" src="./images/animaciones/star.json" background="transparent" speed="1"
             style="width: auto; height: 80px;" loop autoplay></lottie-player>
-            <lottie-player class="header-anim-stroke" src="./images/animaciones/stroke.json" background="transparent" speed="1"
-            style="width: auto; height: 100px;" loop autoplay></lottie-player>
-        </div>
+        <lottie-player class="header-anim-stroke" src="./images/animaciones/stroke.json" background="transparent"
+            speed="1" style="width: auto; height: 100px;" loop autoplay></lottie-player>
+    </div>
 
     <section class="servicios">
         <div class="triangulo"></div>
@@ -99,12 +100,21 @@
     <section class="seccion-pasos">
         <h1>Pasos a seguir</h1>
         <div class="seccion-pasos-eye">
-            <lottie-player src="./images/animaciones/ojo.json" background="transparent" speed="1" style="width: auto; height: 150px;" loop
-                autoplay></lottie-player>
-            <div class="paso1 paso">Paso 1 <br> <span>Selecciona a <br> un tarotista</span></div>
-            <div class="paso2 paso">Paso 2 <br> <span>Indica la hora <br> y fecha de tu <br>sesión</span></div>
-            <div class="paso3 paso">Paso 3 <br> <span>Selecciona el <br> precio y paga</span></div>
+            <lottie-player class="anim-steps-eye" src="./images/animaciones/ojo.json" background="transparent" speed="1"
+                style="width: auto; height: 150px;" loop autoplay></lottie-player>
+            <lottie-player class="anim-steps" src="./images/animaciones/steps.json" background="transparent" speed=".5"
+                style="width: auto; height: auto;" loop autoplay></lottie-player>
         </div>
+        <lottie-player class="pasos-anim-star-blue" src="./images/animaciones/star2.json" background="transparent"
+            speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+        <lottie-player class="pasos-anim-star-red" src="./images/animaciones/little-star2.json" background="transparent"
+            speed="1" style="width: auto; height: 30px;" loop autoplay></lottie-player>
+        <lottie-player class="pasos-anim-right" src="./images/animaciones/right.json" background="transparent" speed="1"
+            style="width: auto; height: 40px;" loop autoplay></lottie-player>
+        <lottie-player class="pasos-anim-left" src="./images/animaciones/left.json" background="transparent" speed="1"
+            style="width: auto; height: 100%;" loop autoplay></lottie-player>
+        <lottie-player class="pasos-anim-star-green" src="./images/animaciones/little-star1.json"
+            background="transparent" speed="1" style="width: auto; height: 30px;" loop autoplay></lottie-player>
     </section>
     <section class="seccion-tarotistas">
         <h1>Nuestros tarotistas</h1>
@@ -207,21 +217,42 @@
     </section>
     <section class="seccion-preguntas">
         <div class="seccion-preguntas-grid">
-            <div class="seccion-preguntas-grid-form">
+            <div class="seccion-preguntas-grid-form ">
                 <h1>Tienes <br>
                     una pregunta <br>
                     gratuita <img src="./images/preguntas/arrowblack.svg" alt="pregunta-gratuita"></h1>
                 <form action="action">
-                    <textarea name="form" id="form" placeholder="Escribe tu pregunta"></textarea>
-                    <input type="email" placeholder="Correo electrónico">
+                    <textarea required name="form" id="form" placeholder="Escribe tu pregunta"></textarea>
+                    <input required type="email" placeholder="Correo electrónico">
                     <button type="submit">Enviar <img src="./images/preguntas/arrowblack.svg" alt="send"></button>
                 </form>
             </div>
             <div class="seccion-preguntas-grid-img">
-                <img src="./images/preguntas/Layer 2.png" alt="layer">
+                <!-- <img src="./images/preguntas/Layer 2.png" alt="layer"> -->
+                <lottie-player class="" src="./images/animaciones/el-mago2.json" background="transparent" speed="1"
+                    style="width: 100%; height: auto;" loop autoplay></lottie-player>
             </div>
         </div>
     </section>
+
+
+
+
+    <lottie-player class="" src="./images/animaciones/planets-2.json" background="black" speed="1"
+        style="width: auto; height: 500px;" loop autoplay></lottie-player>
+    <lottie-player class="" src="./images/animaciones/planets-3.json" background="black" speed="1"
+        style="width: auto; height: 500px;" loop autoplay></lottie-player>
+    <lottie-player class="" src="./images/animaciones/planets.json" background="black" speed="1"
+        style="width: auto; height: 500px;" loop autoplay></lottie-player>
+
+
+
+
+
+
+
+
+
     <section class="seccion-empiezaAqui">
         <img src="./images/yellow-moon-logo.svg" alt="logo-tarotistas-en-vivo">
         <h1>Empieza aquí</h1>
@@ -229,6 +260,7 @@
             Lorem ipsum dolor sit amet, <br> consectetuer adipiscing elit.</p>
         <button><img src="./images/icons/phone.svg" alt="llámanos"> Llámanos</button>
     </section>
+    <!-- FOOTER  -->
     <footer>
         <div class="mainfooter">
             <div class="mainfooter-logo">
@@ -265,7 +297,6 @@
             </div>
             <p>Hecho por StartDesignGroup 2022</p>
         </div>
-
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/swiper.min.js"></script>

@@ -91,7 +91,7 @@ nav .logo img {
     padding: 17px 20px;
     /* padding-left: 20px;
     padding-right: 20px; */
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 20px;
     /* height: 72px; */
 }
@@ -244,6 +244,22 @@ nav .logo img {
     position: absolute;
     bottom: 35%;right: 0;
 }
+.header-anim-triangle-yellow{
+    position: absolute;
+    top: 55%;left: 20%;
+    animation: float1  5s infinite linear;
+}
+@keyframes float1 {
+    0% {
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
 .header::-webkit-scrollbar {
     /* display: none; */
 }
@@ -253,7 +269,7 @@ nav .logo img {
     color: #fff;
     font-family: var(--text-rubik);
     font-size: 80px;
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
 }
 
 .header h1::selection {
@@ -284,11 +300,11 @@ nav .logo img {
     font-family: var(--text-rubik);
     display: inline-flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
-    font-weight: var(--text-medium);
+    font-weight: var(--text-regular);
 }
 
 .header>div a img {
@@ -401,6 +417,7 @@ nav .logo img {
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: var(--text-rubik);
+    position: relative;
 }
 
 .seccion-pasos h1 {
@@ -427,41 +444,40 @@ nav .logo img {
 .seccion-pasos-eye .eye {
     position: relative;
     display: block;
-    /* height: 130px; */
+    z-index: 2;
 }
-
-.seccion-pasos-eye .paso {
+.anim-steps{
     position: absolute;
-    font-size: 1.5em;
-    /* line-height: 42px; */
-    font-weight: normal;
-}
-
-.seccion-pasos-eye .paso1 {
-    color: var(--color-yellow);
     top: 0;
-    left: 0
+    height:  100%;
+    width: 100%;
+    transform: translateY(-50px);
+    z-index: 2;
 }
-
-.seccion-pasos-eye .paso2 {
-    color: #ff3b31;
-    bottom: -50px;
-    left: 40%;
+.pasos-anim-star-blue{
+    position: absolute;
+    left: 10%;
+    top: 60%;
 }
-
-.seccion-pasos-eye .paso3 {
-    color: var(--color-purple);
+.pasos-anim-star-red{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+.pasos-anim-right{
+    position: absolute;
+    bottom: 5%;left: 5%;
+}
+.pasos-anim-left{
+    position: absolute;
+    right: 0;
     top: 0;
-    right: 0
 }
-
-.seccion-pasos-eye .paso span {
-    color: #fff;
+.pasos-anim-star-green{
+    position: absolute;
+    top: 20%;
+    left: 7%;
 }
-
-
-
-
 
 /* SECCION-TAROTISTAS  */
 .seccion-tarotistas {
@@ -688,14 +704,14 @@ nav .logo img {
 .seccion-preguntas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 200px;
     margin-left: 220px;
     margin-right: 220px;
 }
 
 .seccion-preguntas h1 {
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 60px;
+    line-height: 75px;
     font-weight: 400;
     margin-bottom: 40px;
     position: relative;
@@ -706,6 +722,7 @@ nav .logo img {
     position: absolute;
     right: 10%;
     bottom: -5%;
+    height: 50px;
 }
 
 .seccion-preguntas form input[type=email] {
@@ -744,7 +761,7 @@ nav .logo img {
 
 .seccion-preguntas form button {
     background-color: #aaa;
-    color: #000;
+    color: #353535;
     border-radius: 5px;
     font-size: 24px;
     border: none;

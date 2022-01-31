@@ -30,6 +30,8 @@
 .servicios-tarotistas-header p{
     font-size: 35px;
     line-height: 42px;
+    /* font-size: 1.5em;
+    line-height: 32px; */
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -44,9 +46,12 @@
     align-items: center;
 }
 .servicios-tarotistas-header a img{
-    margin-left: 15px;
+    margin-left: 25px;
+    transition: .3s linear transform;
 }
-
+.servicios-tarotistas-header a:hover img{
+    transform: translateX(10px);
+}
 
 
 .servicios-tarotistas{
@@ -57,10 +62,10 @@
 .servicios-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px 70px ;
-    width: 1200px;
+    gap: 50px 90px ;
+    /* width: 1200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 .servicio-card img{
     height: 126px;
@@ -69,9 +74,18 @@
 .servicio-card p{
     font-size: 35px;
     line-height: 42px;
+    font-size: 1.5em;
+    line-height: 32px;
     font-family: var(--text-rubik);
     font-weight: normal;
 }
+@media (max-width:1000px) {
+    .servicios-grid{
+        grid-template-columns: repeat(2, 1fr);
+    gap: 30px 70px ;
+    }
+}
+
 .consulta-con-nosotros{
     background-color: var(--color-blue);
     padding-top: 100px;
