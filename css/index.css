@@ -61,9 +61,10 @@ nav {
 
 nav.sticky {
     /* background: rgba(0, 0, 0, .2); */
-    background: rgba(53, 53, 53, .7);
+    /* background: rgba(53, 53, 53, .7);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
+    background-color: var(--color-yellow);
 }
 
 nav>div {
@@ -174,17 +175,17 @@ nav .logo img {
 }
 
 .menu {
-    background: rgba(53, 53, 53, .7);
     width: 100%;
     min-height: 800px;
     height: 100vh;
     z-index: 5;
     position: fixed;
     display: none;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     padding-top: 150px;
     padding-right: 200px;
+    background: rgba(53, 53, 53, .7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .menu ul {
