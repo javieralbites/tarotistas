@@ -228,6 +228,22 @@ nav .logo img {
     position: absolute;
     top: 90px;left: -50px;
 }
+.header-anim-star1{
+    position: absolute;
+    top: 90px; left: 25%;
+}
+.header-anim-star2{
+    position: absolute;
+    top: 50%; right: 25%;
+}
+.header-anim-star{
+    position: absolute;
+    top: 15%; right: 10%;
+}
+.header-anim-stroke{
+    position: absolute;
+    bottom: 35%;right: 0;
+}
 .header::-webkit-scrollbar {
     /* display: none; */
 }
