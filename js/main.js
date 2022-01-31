@@ -9,13 +9,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
 // NAV 
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
+    if (document.querySelector(".menu").classList.contains("change")) {
+      //
+    } else {
       nav.classList.toggle("sticky", window.scrollY > 0);
+      //
+    }
 });
 
 // MENU 
 function menuOnClick() {
   document.querySelector(".menu-btn").classList.toggle("change");
   document.querySelector(".menu").classList.toggle("change");
+  document.querySelector("nav").classList.remove("sticky")
   // var tl = gsap.timeline()
   // tl.from('.menu ul li', {
   //   opacity:1,

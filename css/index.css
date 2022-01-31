@@ -220,9 +220,14 @@ nav .logo img {
     width: 100%;
     background-color: var(--color-blue);
     overflow: hidden;
-    height: 95vh;
 }
-
+.header-anim-de-letras{
+    transform: translateX(-50px);
+}
+.header-anim-effect{
+    position: absolute;
+    top: 90px;left: -50px;
+}
 .header::-webkit-scrollbar {
     /* display: none; */
 }
@@ -232,7 +237,7 @@ nav .logo img {
     color: #fff;
     font-family: var(--text-rubik);
     font-size: 80px;
-    font-weight: normal;
+    font-weight: var(--text-semibold);
 }
 
 .header h1::selection {
@@ -256,7 +261,7 @@ nav .logo img {
 
 .header>div a {
     margin-top: 50px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -267,6 +272,7 @@ nav .logo img {
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
+    font-weight: var(--text-medium);
 }
 
 .header>div a img {
