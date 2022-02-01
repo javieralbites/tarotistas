@@ -50,15 +50,43 @@ acc_btns.forEach((btn) => {
   });
 });
 
-// SLIDES HOME 
+// SLIDES HOME TESTIMONIO
 var swiperHome = new Swiper(".swiper-testimonio", {
   slidesPerView: "auto",
-  spaceBetween: 250,
+  spaceBetween: 30,
   centeredSlides: false,
   loop: true,
   navigation: {
+    prevEl: '.swiper-testimonio-btn-prev',
     nextEl: '.swiper-testimonio-btn-next'
+},
+breakpoints: {
+  992:{
+    spaceBetween:250
+  }
 }
+});
+// SLIDES HOME SERVICIOS MOBILE
+var swiperHomeServicioMobile = new Swiper(".home-servicios-slides-mobile", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+// SLIDES HOME TAROTISTAS MOBILE
+var swiperHomeServicioMobile = new Swiper(".home-tarotistas-slides-mobile", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 // SLIDE NUESTROS TAROTISTAS
 var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
@@ -69,6 +97,8 @@ var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
   },
   loop: true
 })
+
+
 // LOGIN 
 function registroActive() {
   document.querySelector(".content-registro").classList.add("active")
