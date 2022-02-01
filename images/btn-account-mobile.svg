@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="37.599" viewBox="0 0 56 37.599">
+  <g id="Grupo_447" data-name="Grupo 447" transform="translate(-41 -720.401)">
+    <text id="Mi_Cuenta" data-name="Mi Cuenta" transform="translate(41 755)" font-size="12" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">Mi Cuenta</tspan></text>
+    <g id="Capa_1" data-name="Capa 1" transform="translate(55 706.332)">
+      <path id="Trazado_730" data-name="Trazado 730" d="M0,56.216a19.15,19.15,0,0,1,31.443,0S27.2,64.363,16.16,64.631A18.8,18.8,0,0,1,0,56.216Z" transform="translate(0 -32.931)" fill="#efefef" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Elipse_15" data-name="Elipse 15" cx="6.054" cy="6.054" r="6.054" transform="translate(9.668 17.544)" fill="#b47bff" stroke="#000" stroke-width="2"/>
+      <circle id="Elipse_18" data-name="Elipse 18" cx="3.244" cy="3.244" r="3.244" transform="translate(12.478 20.354)"/>
+      <ellipse id="Elipse_17" data-name="Elipse 17" cx="0.939" cy="0.939" rx="0.939" ry="0.939" transform="translate(15.709 22.22)" fill="#f2f2f2"/>
+    </g>
+  </g>
+</svg>

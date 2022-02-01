@@ -136,7 +136,7 @@ nav {
 }
 
 nav.sticky {
-    background-color: var(--color-yellow);
+    background-color: var(--color-blue);
     box-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
 }
 
@@ -1204,8 +1204,6 @@ nav .logo img.logo-mobile {
     .seccion-empiezaAqui .btn-box-center{justify-content: center;}
 }
 
-
-
 /* FOOTER  */
 footer {
     background-color: #000;
@@ -1281,7 +1279,6 @@ footer {
     text-decoration: none;
     color: #fff;
     font-size: 1em;
-    /* font-weight: normal; */
     font-weight: var(--text-regular);
 }
 
@@ -1326,18 +1323,20 @@ footer {
     .subfooter span{display: none;}
     .subfooter p{margin-top: 50px; text-align: center;}
 }
-
+/* NAVBAR BOTTOM MOBILE  */
 .nav-mobile {
     background-color: #e6e6e6;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     display: none;
-    height: 60px;
+    /* height: 60px; */
     z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 @media (max-width:992px) {
