@@ -131,7 +131,6 @@ function inicioSesionActive() {
 
 // MENU MOBILE
 var tlMenuMobile = gsap.timeline({paused:true})
-tlMenuMobile.set('.menu',{display:'inline-flex'})
     tlMenuMobile.to(".menu", {
       display: "inline-flex"
     });
@@ -146,6 +145,7 @@ tlMenuMobile.set('.menu',{display:'inline-flex'})
       opacity: 1,
       stagger: 0.1
     })
+    
 function menuMobileOnClick() {
   if (!document.querySelector(".btn-menu-mobile").classList.contains("active")) {
     document.querySelector(".btn-menu-mobile").classList.add("active")

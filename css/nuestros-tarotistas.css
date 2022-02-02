@@ -1,7 +1,5 @@
-
 .seccion-slides{
     width: 100%;
-    /* height: 700px; */
     height: 100vh;
     position: relative;
     font-family: var(--text-rubik);
@@ -12,7 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     position: relative;
 }
-.seccion-slides .slide .slide-img img{
+.seccion-slides .slide .slide-img{
+    position: relative;
+}
+.seccion-slides .slide .slide-img .slide-foto-tarotista{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -31,6 +32,12 @@
     cursor: pointer;
     bottom: 0;
     overflow: hidden;
+    user-select: none; 
+    -webkit-user-select: none; 
+  -ms-user-select: none; 
+}
+.nuestros-tarotistas-slider-btn:active{
+    transform: scale(.9);
 }
 .nuestros-tarotistas-slider-btn::before{
     content: '';
@@ -84,44 +91,84 @@
     background-color: #EFEFEF;
 }
 .seccion-slides .slide .slide-content .like{
-    font-weight: bold;
+    font-weight: var(--text-bold);
     font-size: 35px;
     margin-bottom: 40px;
 }
 .seccion-slides .slide .slide-content p{
-    font-size: 1.5em;
-    line-height: 32px;
     margin-bottom: 20px;
-    font-weight: var(--text-regular);
 }
 .seccion-slides .slide .slide-content p .nombre-tarotista{
     font-weight: var(--text-semibold);
 }
-.seccion-slides .slide .slide-content a{
+.seccion-slides .btn-black{
     margin-top: 40px;
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px;
-    border: none;
-    font-size: 24px;
-    padding: 20px 25px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
 }
-.seccion-slides .slide .slide-content a img{
-    transition: .2s ease transform;
-    margin-left: 20px;
+
+@media (max-width:992px) {
+    .seccion-slides{
+        margin-top: 100px;
+        height: auto;
+    }
+    .seccion-slides .slide{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .seccion-slides .slide .slide-img{
+        height: 400px;
+    }
+    .nuestros-tarotistas-slider-btn{
+        width: 64px;
+        height: 64px;
+        margin: 20px;
+        z-index: 2;
+        bottom: initial;
+        top: 150px;
+    }
+    .seccion-slides .slide .slide-content{
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+    .seccion-slides .slide .slide-content .like{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .seccion-slides .slide .slide-content .exp-tarotista{
+        display: none;
+    }
+    .seccion-slides .slide .slide-content .desc-tarotista{
+        display: none;
+    }
+    .seccion-slides .btn-black{
+        margin-top: 10px;
+    }
+    .nuestros-tarotistas-slider-btn::before{
+        display: none;
+    }
+    .nuestros-tarotistas-slider-btn img{
+        width: 40px;
+    }
+    .nuestros-tarotistas-slider-btn-next{
+        border: 2px solid #fff;
+    }
+    
+    .nuestros-tarotistas-slider-btn-next img{
+        filter: invert(100%) sepia(4%) saturate(1027%) hue-rotate(272deg) brightness(117%) contrast(100%);
+    }
+    
+    .nuestros-tarotistas-slider-btn-prev{
+        border: 2px solid #fff;
+    }
+    .nuestros-tarotistas-slider-btn-prev:hover img{
+        filter: none;
+    }
 }
-.seccion-slides .slide .slide-content a:hover img{
-    transform: translateX(10px);
-}
+
 
 /* seccion-tarotistas-grid */
 .seccion-tarotistas-grid{
-    padding-left: 180px;
-    padding-right: 180px;
+    /* padding-left: 180px;
+    padding-right: 180px; */
     padding-top: 100px;
     padding-bottom: 100px;
     gap: 50px;
@@ -142,11 +189,11 @@
 }
 .tarotista-card-content .like{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: var(--text-bold);
 }
-.tarotista-card-content h4{
+.tarotista-card-content .nombre-tarotista{
     font-size: 35px;
-    font-weight: normal;
+    font-weight: var(--text-semibold);
 }
 .tarotista-card-content p{
     font-size: 24px;
@@ -156,7 +203,7 @@
 .tarotista-card-content > a{
     display: inline-block;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 13px 15px;
     font-size: 24px;
 }
@@ -168,4 +215,41 @@
 .tarotista-card-content .btn-ver{
     box-shadow: inset 0 0 0 2px #000;
     color: #000;
+}
+@media (max-width:992px) {
+    .seccion-tarotistas-grid{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tarotista-card{
+        gap: 15px;
+    }
+    .tarotista-card-img img{
+        margin-top: 0px;
+    }
+    .tarotista-card-content{
+        padding-top: 0px;
+    }
+    .tarotista-card-content .like{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .tarotista-card-content .like img{
+        height: 22px;
+    }
+    .tarotista-card-content .nombre-tarotista{
+        font-size: 24px;
+    }
+    .tarotista-card-content p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .tarotista-card-content > a{
+
+        padding: 13px 15px;
+        font-size: 16px;
+    }
 }
