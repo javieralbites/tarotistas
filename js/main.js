@@ -1,17 +1,32 @@
-document.addEventListener('DOMContentLoaded', ()=> {
+document.addEventListener('DOMContentLoaded', () => {
   var tl = gsap.timeline()
-  tl.to('.loadingPano img', {opacity: 0, delay:1, })
-  tl.to('.loadingPano', {y:'-100%',delay:.5, duration:0.5, ease: 'power4'})
-  tl.from('.nav-container .logo',{opacity:0,duration:1})
-  tl.from('.nav-links a ', {opacity:0,duration:1, stagger:.2})
+  tl.to('.loadingPano img', {
+    opacity: 0,
+    delay: 1,
+  })
+  tl.to('.loadingPano', {
+    y: '-100%',
+    delay: .5,
+    duration: 0.5,
+    ease: 'power4'
+  })
+  tl.from('.nav-container .logo', {
+    opacity: 0,
+    duration: 1
+  })
+  tl.from('.nav-links a ', {
+    opacity: 0,
+    duration: 1,
+    stagger: .2
+  })
 })
 
 // NAV 
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
-    if (!document.querySelector(".menu").classList.contains("change")) {
-      nav.classList.toggle("sticky", window.scrollY > 0);
-    }
+  if (!document.querySelector(".menu").classList.contains("change")) {
+    nav.classList.toggle("sticky", window.scrollY > 0);
+  }
 });
 
 // MENU 
@@ -59,12 +74,12 @@ var swiperHome = new Swiper(".swiper-testimonio", {
   navigation: {
     prevEl: '.swiper-testimonio-btn-prev',
     nextEl: '.swiper-testimonio-btn-next'
-},
-breakpoints: {
-  992:{
-    spaceBetween:250
+  },
+  breakpoints: {
+    992: {
+      spaceBetween: 250
+    }
   }
-}
 });
 // SLIDES HOME SERVICIOS MOBILE
 var swiperHomeServicioMobile = new Swiper(".home-servicios-slides-mobile", {
@@ -91,7 +106,7 @@ var swiperHomeServicioMobile = new Swiper(".home-tarotistas-slides-mobile", {
 // SLIDE NUESTROS TAROTISTAS
 var swiperTarotistas = new Swiper(".swiper-nuestros-tarotistas", {
   // effect: "fade",
-  navigation:{
+  navigation: {
     prevEl: '.nuestros-tarotistas-slider-btn-prev',
     nextEl: '.nuestros-tarotistas-slider-btn-next'
   },
@@ -106,9 +121,37 @@ function registroActive() {
   document.querySelector(".btn-registro").classList.add("active")
   document.querySelector(".btn-inicioSesion").classList.remove("active")
 }
+
 function inicioSesionActive() {
   document.querySelector(".content-registro").classList.remove("active")
   document.querySelector(".content-iniciarSesion").classList.add("active")
   document.querySelector(".btn-registro").classList.remove("active")
   document.querySelector(".btn-inicioSesion").classList.add("active")
+}
+
+// MENU MOBILE
+var tlMenuMobile = gsap.timeline({paused:true})
+tlMenuMobile.set('.menu',{display:'inline-flex'})
+    tlMenuMobile.to(".menu", {
+      display: "inline-flex"
+    });
+    tlMenuMobile.fromTo(".menu", {
+      opacity: 0
+    }, {
+      opacity: 1
+    })
+    tlMenuMobile.fromTo(".menu ul li a", {
+      opacity: 0
+    }, {
+      opacity: 1,
+      stagger: 0.1
+    })
+function menuMobileOnClick() {
+  if (!document.querySelector(".btn-menu-mobile").classList.contains("active")) {
+    document.querySelector(".btn-menu-mobile").classList.add("active")
+    tlMenuMobile.play()
+  } else {
+    tlMenuMobile.reverse();
+    document.querySelector(".btn-menu-mobile").classList.remove("active");
+  }
 }
