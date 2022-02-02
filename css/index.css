@@ -1254,20 +1254,8 @@ footer {
     display: block;
 }
 
-.mainfooter-logo a {
-    margin-top: 35px;
-    color: #fff;
-    background-color: var(--color-blue);
-    border-radius: 8px;
-    font-size: 24px;
-    padding: 20px 25px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.mainfooter-logo a img {
-    margin-left: 20px;
+.mainfooter-logo .btn {
+     margin-top: 35px;
 }
 
 .mainfooter-links>div {
@@ -1334,10 +1322,8 @@ footer {
     .mainfooter-logo>img {
         height: 40px;
     }
-    .mainfooter-logo a{
+    .mainfooter-logo .btn{
         margin-bottom: 30px;
-        font-size: 16px;
-        padding: 17px 22px;
     }
     .mainfooter-links a{
         display: block;

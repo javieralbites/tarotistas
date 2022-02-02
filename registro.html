@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,52 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/registro.css">
 </head>
+
 <body>
-    <div class="cardLogin">
-        <div class="tabHeader">
-            <div class="active btn-registro" onclick="registroActive()">Regístrate</div>
-            <div class="btn-inicioSesion" onclick="inicioSesionActive()">Iniciar Sesión</div>
-        </div>
-        <div class="tab-content">
-            <div class="active content-registro">
-                <div class="loginfacebook"><img src="./images/icons/facebook-login.svg">Regístrate con facebook</div>
-                <div class="logingoogle"><img src="./images/icons/google-login.svg">Regístrate con google</div>
-                <div class="separador">
-                    <span></span>
-                    <p>o</p>
-                    <span></span>
-                </div>
-                <form action="registro">
-                    <input type="text" placeholder="Nombre de Usuario">
-                    <input type="email" placeholder="Correo electrónico">
-                    <input type="password" name="" id="" placeholder="Contraseña">
-                    <button type="submit">Regístrate Gratis</button>
-                </form>
+    <div class="pageLogin">
+        <div class="btn-volver"><a href="/"><img src="./images/icons/arrowwhite.svg" alt="back">Volver</a></div>
+        <div class="cardLogin">
+            <div class="tabHeader">
+                <div class="active btn-registro" onclick="registroActive()">Regístrate</div>
+                <div class="btn-inicioSesion" onclick="inicioSesionActive()">Iniciar Sesión</div>
             </div>
-            <div class="content-iniciarSesion">
-                <div class="loginfacebook"><img src="./images/icons/facebook-login.svg">Inicia Sesión con facebook</div>
-                <div class="logingoogle"><img src="./images/icons/google-login.svg">Inicia Sesión con google</div>
-                <div class="separador">
-                    <span></span>
-                    <p>o</p>
-                    <span></span>
+            <div class="tab-content">
+                <div class="active content-registro">
+                    <div class="loginfacebook"><img src="./images/icons/facebook-login.svg">Regístrate por facebook
+                    </div>
+                    <div class="logingoogle"><img src="./images/icons/google-login.svg">Regístrate por Google</div>
+                    <div class="separador">
+                        <span></span>
+                        <p>o</p>
+                        <span></span>
+                    </div>
+                    <form action="registro">
+                        <input type="text" placeholder="Nombre de Usuario">
+                        <input type="email" placeholder="Correo electrónico">
+                        <input type="password" name="" id="" placeholder="Contraseña">
+                        <button type="submit">Regístrate Gratis</button>
+                    </form>
                 </div>
-                <form action="registro">
-                    <input type="text" placeholder="Nombre de Usuario">
-                    <!-- <input type="email" placeholder="Correo electrónico"> -->
-                    <input type="password" name="" id="" placeholder="Contraseña">
-                    <button type="submit">Iniciar Sesión</button>
-                </form>
-                <p>Si olvidaste tu contraseña dale click <a href="/">aquí.</a> </p>
+                <div class="content-iniciarSesion">
+                    <div class="loginfacebook"><img src="./images/icons/facebook-login.svg">Inicia Sesión con facebook
+                    </div>
+                    <div class="logingoogle"><img src="./images/icons/google-login.svg">Inicia Sesión con google</div>
+                    <div class="separador">
+                        <span></span>
+                        <p>o</p>
+                        <span></span>
+                    </div>
+                    <form action="registro">
+                        <input type="text" placeholder="Nombre de Usuario">
+                        <input type="password" name="" id="" placeholder="Contraseña">
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                    <p>Si olvidaste tu contraseña dale click <a href="/">aquí.</a> </p>
+                </div>
             </div>
+            <a href="/" class="btn-back"><img src="./images/icons/arrow-black-back.svg"></a>
         </div>
-        <a href="/" class="btn-back"><img src="./images/icons/arrow-black-back.svg"></a>
+        <p class="container-content">Al continuar, está indicando que acepta nuestros términos de servicio y <br> política de privacidad.</p>
     </div>
-    <p>Al continuar, está indicando que acepta nuestros términos de servicio y <br> política de privacidad.</p>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
