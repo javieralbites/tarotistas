@@ -61,9 +61,7 @@ p {
     display: flex;
     justify-content: center;
 }
-
-.btn-black {
-    background-color: #000;
+.btn{
     color: #fff;
     text-align: center;
     display: inline-flex;
@@ -76,13 +74,18 @@ p {
     font-weight: var(--text-regular);
     text-decoration: none;
 }
-
-.btn-black img {
+.btn-black {
+    background-color: #000;
+}
+.btn-blue{
+    background-color: var(--color-blue);
+}
+.btn img {
     margin-left: 25px;
     transition: .3s ease-out transform;
 }
 
-.btn-black:hover img {
+.btn:hover img {
     transform: translateX(10px);
 }
 
@@ -91,11 +94,11 @@ p {
         justify-content: start;
     }
 
-    .btn-black {
+    .btn {
         font-size: 16px;
     }
 
-    .btn-black img {
+    .btn img {
         height: 20px;
         margin-left: 15px;
     }
@@ -421,7 +424,7 @@ nav .logo img.logo-mobile {
     user-select: none;
 }
 
-.header .btn-black {
+.header .btn {
     margin-top: 50px;
 }
 
@@ -558,13 +561,12 @@ nav .logo img.logo-mobile {
     margin-top: 20px;
 }
 
-.servicios .btn-black {
+.servicios .btn {
     margin-top: 40px;
 }
 
 .home-servicios-slides-mobile {
     display: none;
-    /* background-color: #3E0CF2; */
 }
 
 .home-servicios-slides-mobile-item {
@@ -858,7 +860,7 @@ nav .logo img.logo-mobile {
     justify-content: center;
 }
 
-.seccion-tarotistas .btn-black {
+.seccion-tarotistas .btn {
     margin-top: 70px;
 }
 
@@ -876,7 +878,7 @@ nav .logo img.logo-mobile {
         display: block;
     }
 
-    .seccion-tarotistas .btn-black {
+    .seccion-tarotistas .btn {
         margin-top: 40px;
     }
 }
@@ -1211,15 +1213,15 @@ nav .logo img.logo-mobile {
     color: var(--color-blue);
 }
 
-.seccion-empiezaAqui .btn-black{
+.seccion-empiezaAqui .btn{
     margin-top: 40px;
 }
 
-.seccion-empiezaAqui .btn-black img{
+.seccion-empiezaAqui .btn img{
     margin-right: 20px;
     margin-left: 0;
 }
-.seccion-empiezaAqui .btn-black:hover img{
+.seccion-empiezaAqui .btn:hover img{
     transform: none;
 }
 @media (max-width:992px) {

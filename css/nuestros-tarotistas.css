@@ -101,7 +101,7 @@
 .seccion-slides .slide .slide-content p .nombre-tarotista{
     font-weight: var(--text-semibold);
 }
-.seccion-slides .btn-black{
+.seccion-slides .btn{
     margin-top: 40px;
 }
 
@@ -139,7 +139,7 @@
     .seccion-slides .slide .slide-content .desc-tarotista{
         display: none;
     }
-    .seccion-slides .btn-black{
+    .seccion-slides .btn{
         margin-top: 10px;
     }
     .nuestros-tarotistas-slider-btn::before{

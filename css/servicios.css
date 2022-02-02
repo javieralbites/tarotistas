@@ -24,9 +24,6 @@
     margin-top: 40px;
     margin-bottom: 50px;
 }
-.servicios-tarotistas-header .btn-black{
-    background-color: var(--color-blue);
-}
 .servicios-tarotistas-header-anim{
     width: 100%; height: 600px;
 }
@@ -48,7 +45,7 @@
     .servicios-tarotistas-header p{
         display: none;
     }
-    .servicios-tarotistas-header .btn-black{
+    .servicios-tarotistas-header .btn{
         margin-top: 20px;
     }
     .servicios-tarotistas-header-anim{
@@ -130,7 +127,7 @@
 .servicios-tarotistas-tarotistas h1{
     margin-bottom: 50px;
 }
-.servicios-tarotistas-tarotistas .btn-black{
+.servicios-tarotistas-tarotistas .btn{
     margin-top: 70px;
 }
 @media (max-width:992px){
@@ -144,7 +141,7 @@
     .servicios-tarotistas-tarotistas .btn-box-center{
         justify-content: center;
     }
-    .servicios-tarotistas-tarotistas .btn-black{
+    .servicios-tarotistas-tarotistas .btn{
         margin-top: 50px;
     }
 }

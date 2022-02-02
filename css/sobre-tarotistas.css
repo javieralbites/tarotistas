@@ -1,6 +1,5 @@
 .sobre-tarotistas-header{
     background-color: #fff;
-    font-family: var(--text-rubik);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -9,40 +8,39 @@
     justify-content: space-between;
     align-items: center;
 }
-.sobre-tarotistas-header h1{
-    font-size: 80px;
-    line-height: 95px;
-    font-weight: normal;
-}
-.sobre-tarotistas-header a{
-    color: #fff;
-    background-color: var(--color-blue);
-    padding: 20px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    font-size: 24px;
+
+.sobre-tarotistas-header .btn{
     margin-top: 30px;
 }
-.sobre-tarotistas-header a img{
-    margin-left: 25px;
-    transition: .3s linear transform;
+.sobre-tarotistas-header-anim{
+    width: auto; height: 600px;
 }
-.sobre-tarotistas-header a:hover img{
-    transform: translateX(10px);
+
+@media (max-width:992px) {
+    .sobre-tarotistas-header{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .sobre-tarotistas-header-flex{
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+    .sobre-tarotistas-header .btn{
+        margin-top: 30px;
+    }
+    .sobre-tarotistas-header-anim{
+        width: 90%; height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
+
 .sobre-tarotistas-about{
     background-color: var(--color-yellow);
-    font-family: var(--text-rubik);
     padding-top: 100px;
     padding-bottom: 100px;
-}
-.sobre-tarotistas-container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 .sobre-tarotistas-about-flex{
     display: flex;
@@ -50,20 +48,36 @@
     align-items: center;
 }
 .sobre-tarotistas-about h1{
-    font-size: 80px;
-    line-height: 95px;
     color: var(--color-blue);
-    font-weight: normal;
 }
 .sobre-tarotistas-about img{
-    /* transform: scaleX(.5); */
-    width: 150px;
+    max-width: 150px;
+    transform: scale(2) translateY(-50px) translateX(0px);
+}   
+
+@media (max-width:992px) {
+    .sobre-tarotistas-about{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .sobre-tarotistas-about-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .sobre-tarotistas-about h1{
+       margin-bottom: 20px;
+    }
+    .sobre-tarotistas-about img{
+        max-width: 150px;
+        transform: scale(.9) translateY(-50px) translateX(180px) rotate(55deg);
+    }   
+    .sobre-tarotistas-about p br{
+        display: none;
+    }
 }
-.sobre-tarotistas-about p{
-    font-size: 35px;
-    line-height: 42px;
-    color: #000;
-}
+
 
 .sobre-tarotistas-faq{
     background-color: var(--color-grey-light);
@@ -73,18 +87,13 @@
 }
 .sobre-tarotistas-faq h1{
     text-align: center;
-    font-size: 80px;
-    line-height: 95px;
-    font-weight: normal;
     margin-bottom: 30px;
 }
 .sobre-tarotistas-faq-container{
     width: 700px;
     margin-left: auto;margin-right: auto;
 }
-.faq{
-    margin-bottom: 10px;
-}
+.faq{margin-bottom: 30px;}
 .faq-header{
     display: flex;
     justify-content: space-between;
@@ -92,8 +101,9 @@
     padding: 10px 20px;
     border-bottom: 2px solid #000;
     font-size: 35px;
+    font-weight: var(--text-regular);
+    line-height: 28px;
     cursor: pointer;
-    /* z-index: 3; */
     position: relative;
 }
 .faq-header::after{
@@ -127,4 +137,28 @@
 .faq-content.active{
     max-height: 15rem;
     padding: 20px;
+}
+@media (max-width:992px) {
+    .sobre-tarotistas-faq{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .sobre-tarotistas-faq-container{
+        width: 85%;
+    }
+    .faq{
+        margin-bottom: 20px;
+    }
+    .faq-header{
+        font-size: 24px;
+    }
+    .faq-header img{
+        margin-left: 20px;
+    }
+    .faq-content{
+        font-size: 16px;
+    }
+    .faq-content.active{
+        max-height: 20rem;
+    }
 }
