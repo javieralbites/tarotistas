@@ -22,15 +22,15 @@
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     line-height: 75px;
     font-family: var(--text-rubik);
     font-weight: var(--text-regular);
 }
 
 p {
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 33px;
     font-family: var(--text-rubik);
     font-weight: var(--text-regular);
 }
@@ -329,7 +329,7 @@ nav .logo img.logo-mobile {
     }
 }
 
-/* HEADER  */
+/* SECCION HEADER  */
 .header {
     position: relative;
     width: 100%;
@@ -496,13 +496,12 @@ nav .logo img.logo-mobile {
         display: block;
     }
 }
-
-/* SERVICIOS  */
+/* SECCION HEADER FIN  */
+/*SECCION  SERVICIOS  */
 .servicios {
     padding-top: 200px;
     padding-bottom: 100px;
     width: 100%;
-    /* display: block; */
     position: relative;
     background-color: #EFEFEF;
 }
@@ -552,11 +551,14 @@ nav .logo img.logo-mobile {
 
 .servicio-item-img {
     background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 22px;
 }
-
+.servicio-item-img img{
+    padding: 1em;
+    width: 100%;
+}
 .servicio-item p {
     text-align: center;
     margin-top: 20px;
@@ -571,21 +573,17 @@ nav .logo img.logo-mobile {
 }
 
 .home-servicios-slides-mobile-item {
-    /* background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px   ); */
     width: 70%;
 }
 
 .home-servicios-slides-mobile-item-img {
     background-color: #fff;
     border-radius: 10px;
-    padding: auto;
 }
 
 .home-servicios-slides-mobile-item img {
     width: 100%;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .home-servicios-slides-mobile-item p {
@@ -597,34 +595,58 @@ nav .logo img.logo-mobile {
         font-size: 150px;
     }
 }
+@media (max-width:1100px) {
+    .servicios-back-text {
+        font-size: 130px;
+    }
+    .servicios-items {
+        width: 90%;
+    }
+}
 @media (max-width:992px) {
     .servicios {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
-
-    .servicios h1 {
-        display: block;
-    }
-
     .servicios-back-text {
-        display: none;
+        top: 200px;
+        font-size: 80px;
     }
-
-    .servicios-items {
-        display: none;
-    }
-
     .servicios .btn-box-center {
         justify-content: center;
     }
 
+    .servicio-item {
+        width:  200px;
+    }
+    .servicio-item p {
+        font-size: 24px;
+    }
+    
+}
+@media (max-width:716px) {
+    .servicio-item {
+        width:  180px;
+    }
+}
+@media (max-width:688px) {
+    .servicios h1 {
+        display: block;
+    }
+    .servicios-back-text {
+        display: none;
+    }
+    .servicios-items {
+        display: none;
+    }
+    .home-servicios-slides-mobile-item img {
+        width: 100%;
+    }
     .home-servicios-slides-mobile {
         display: block;
     }
 }
-
-
+/* SECCION SERVICIOS FIN  */
 /* SECCION PASOS  */
 .seccion-pasos {
     background-color: #000;
@@ -653,18 +675,11 @@ nav .logo img.logo-mobile {
     margin-bottom: 50px;
 }
 
-.seccion-pasos-eye .eye {
-    position: relative;
-    display: block;
-    z-index: 2;
-}
-
 .anim-steps {
     position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    transform: translateY(-50px);
+    top: 50px;bottom: 0;left: 0;right: 0;margin: auto;
+    height: 120%;
+    width: auto;
     z-index: 2;
 }
 
@@ -699,11 +714,15 @@ nav .logo img.logo-mobile {
     top: 20%;
     left: 7%;
 }
-
 @media (max-width:992px) {
+    .seccion-pasos-eye {
+        width: 85%;
+    }
+}
+@media (max-width:688px) {
     .seccion-pasos {
         padding-top: 70px;
-        padding-bottom: 70px0;
+        padding-bottom: 70px;
     }
 
     .seccion-pasos h1 {
@@ -715,28 +734,22 @@ nav .logo img.logo-mobile {
     }
 
     .seccion-pasos-eye {
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        justify-content: flex-start;
+    }
+    .pasos-anim-star-blue {
+        left: 30%;
+        top: 90%;
     }
 }
-
-
+/* SECCION PASOS FIN  */
 /* SECCION-TAROTISTAS  */
 .seccion-tarotistas {
-    background-color: #fff;
-    width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.seccion-tarotistas h1 {
-    color: #000;
-
-}
-
 .seccion-tarotistas-items {
-    margin-top: 40px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -790,7 +803,6 @@ nav .logo img.logo-mobile {
 }
 
 .seccion-tarotistas-item-content a:last-of-type {
-    /* border: 2px solid #000; */
     box-shadow: inset 0 0 0 2px #000;
     color: #000;
 }
@@ -868,13 +880,49 @@ nav .logo img.logo-mobile {
 .seccion-tarotistas .btn {
     margin-top: 70px;
 }
-
+@media (max-width:1300px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 80%;
+    }
+    .seccion-tarotistas-item {
+        gap: 15px;
+    }
+}
+@media (max-width:1025px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        gap: 20px;
+        width: 90%;
+    }
+    .seccion-tarotistas-item {
+        /* gap: 100px; */
+    }
+}
 @media (max-width:992px) {
     .seccion-tarotistas {
         padding-top: 70px;
         padding-bottom: 70px;
+        gap: 50px;
     }
-
+    .seccion-tarotistas-item {
+        gap: 20px;
+    }
+}
+@media (max-width:900px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        width: 70%;
+    }
+    .seccion-tarotistas-item {
+        gap: 50px;
+    }
+}
+@media (max-width:688px) {
     .seccion-tarotistas-items {
         display: none;
     }
@@ -888,15 +936,10 @@ nav .logo img.logo-mobile {
     }
 }
 
-
-
-
-
-
+/* SECCION TAROTISTAS FIN  */
 /* SECCION TESTIMONIOS  */
 .seccion-testimonios {
     position: relative;
-    width: 100%;
     background-color: var(--color-yellow);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -953,13 +996,12 @@ nav .logo img.logo-mobile {
     z-index: 2;
 }
 
-
 .swiper-testimonio {
     position: relative;
 }
 
 .swiper-testimonio .swiper-wrapper {
-    margin-left: 350px;
+    margin-left: 300px;
 }
 
 .swiper-testimonio-btn-next-desktop {
@@ -967,7 +1009,7 @@ nav .logo img.logo-mobile {
     bottom: 0;
     top: 0;
     bottom: 0;
-    right: 10%;
+    right: 15%;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 10;
@@ -980,8 +1022,11 @@ nav .logo img.logo-mobile {
     align-items: center;
     cursor: pointer;
     overflow: hidden;
+    transition: .2s linear transform;
 }
-
+.swiper-testimonio-btn-next-desktop:active{
+    transform: scale(.8);
+}
 .swiper-testimonio-btn-next-desktop::before {
     content: '';
     width: 100%;
@@ -1008,6 +1053,7 @@ nav .logo img.logo-mobile {
 .swiper-testimonio-btn-prev-mobile {
     margin-right: 10px;
     transition: .2s linear transform;
+    cursor: pointer;
 }
 
 .swiper-testimonio-btn-prev-mobile:active {
@@ -1016,12 +1062,39 @@ nav .logo img.logo-mobile {
 
 .swiper-testimonio-btn-next-mobile {
     transition: .2s linear transform;
+    cursor: pointer;
+
 }
 
 .swiper-testimonio-btn-next-mobile:active {
     transform: scale(.8);
 }
+.seccion-testimonios .swiper-slide-next{
+    margin-left: 70px;
+}
+@media (max-width:1300px) {
+    .testimonio-card {
+        height: 350px;
+        width: 50%;
+        max-height: 350px;
+        min-height: 350px;
+        min-width: 50%;
+        max-width: 50%;
+    }
+    .home-testimonios-slides-buttons-mobile {
+        display: block;
+    }
 
+    .swiper-testimonio-btn-next-desktop {
+        display: none;
+    }
+    .swiper-testimonio .swiper-wrapper {
+        margin-left: 30px;
+    }
+    .seccion-testimonios .swiper-slide-next{
+        margin-left: 0px;
+    }
+}
 @media (max-width:992px) {
     .seccion-testimonios {
         padding-top: 70px;
@@ -1029,12 +1102,12 @@ nav .logo img.logo-mobile {
     }
 
     .testimonio-card {
-        height: 500px;
-        width: 80%;
-        max-height: 500px;
-        min-height: 500px;
-        min-width: 80%;
-        max-width: 80%;
+        height: 350px;
+        width: 60%;
+        max-height: 350px;
+        min-height: 350px;
+        min-width: 60%;
+        max-width: 60%;
     }
 
     .seccion-testimonios h1 {
@@ -1046,24 +1119,30 @@ nav .logo img.logo-mobile {
     }
 
     .swiper-testimonio .swiper-wrapper {
-        margin-left: 20px;
+        margin-left: 30px;
     }
 
     .testimonio-textspin {
         display: none;
     }
 
-    .home-testimonios-slides-buttons-mobile {
-        display: block;
+    
+}
+@media (max-width:688px) {
+    .testimonio-card {
+        height: 500px;
+        width: 80%;
+        max-height: 500px;
+        min-height: 500px;
+        min-width: 80%;
+        max-width: 80%;
     }
-
-    .swiper-testimonio-btn-next-desktop {
-        display: none;
+    .swiper-testimonio .swiper-wrapper {
+        margin-left: 20px;
     }
 }
 
-
-
+/* SECCION TESTIMONIOS  FIN*/
 /* SECCION-PREGUNTAS  */
 .seccion-preguntas {
     background-color: #EFEFEF;
@@ -1094,7 +1173,7 @@ nav .logo img.logo-mobile {
     padding: 20px 25px;
     border: none;
     font-size: 24px;
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
     font-family: var(--text-rubik);
     background-image: url("../images/icons/email.svg");
     background-repeat: no-repeat;
@@ -1123,7 +1202,7 @@ nav .logo img.logo-mobile {
 }
 
 .seccion-preguntas form textarea::placeholder {
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
     color: #aaa;
     font-family: var(--text-rubik);
 }
@@ -1134,7 +1213,7 @@ nav .logo img.logo-mobile {
     border-radius: 8px;
     font-size: 24px;
     font-family: var(--text-rubik);
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
     border: none;
     padding: 20px 25px;
     cursor: pointer;
@@ -1152,7 +1231,11 @@ nav .logo img.logo-mobile {
     transform: translateX(10px);
 }
 
-
+@media (max-width:1092px) {
+    .seccion-preguntas-grid {
+        gap: 150px;
+    }
+}
 @media (max-width:992px) {
     .seccion-preguntas {
         padding-top: 70px;
@@ -1162,10 +1245,8 @@ nav .logo img.logo-mobile {
         margin-bottom: 30px;
     }
     .seccion-preguntas-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
+        gap: 50px;
     }
-
     .seccion-preguntas h1 img {
         height: 25px;
         margin-left: 15px;
@@ -1177,10 +1258,15 @@ nav .logo img.logo-mobile {
     }
     .seccion-preguntas form button{font-size: 16px;padding: 18px 27px;}
     .seccion-preguntas form textarea{font-size: 16px;}
+}
+@media (max-width:688px) {
+    .seccion-preguntas-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
     .seccion-preguntas-grid-img {display: none;}
 }
-
-
+/* SECCION-PREGUNTAS FIN */
 /* SECCION EMPIEZA AQUI */
 .seccion-empiezaAqui {
     padding-top: 100px;
@@ -1237,7 +1323,7 @@ nav .logo img.logo-mobile {
     .seccion-empiezaAqui div > img{height: 60px;}
     .seccion-empiezaAqui .btn-box-center{justify-content: center;}
 }
-
+/* SECCION EMPIEZA AQUI FIN*/
 /* FOOTER  */
 footer {
     background-color: #000;
@@ -1316,9 +1402,18 @@ footer {
     font-size: 16px;
     font-weight: var(--text-regular);
 }
+/* .mainfooter>div{background-color: #FFBA0D;} */
 @media (max-width:1300px) {
     .container-footer {
         width: 90%;
+    }
+    .mainfooter{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1200px) {
+    .mainfooter{
+        gap: 50px;
     }
 }
 @media (max-width:992px) {
@@ -1374,14 +1469,4 @@ footer {
     .mainfooter-links>div{
         margin-bottom: 0px;
     }
-}
-.ball{
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%;
-}
-.btnball{
-    background-color: green;
-    padding: 10px;
 }

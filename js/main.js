@@ -76,8 +76,8 @@ var swiperHome = new Swiper(".swiper-testimonio", {
     nextEl: '.swiper-testimonio-btn-next'
   },
   breakpoints: {
-    992: {
-      spaceBetween: 250
+    1300: {
+      spaceBetween: 200
     }
   }
 });
