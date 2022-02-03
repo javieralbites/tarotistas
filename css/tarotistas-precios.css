@@ -1,17 +1,12 @@
 .tarotistas-precios-header {
     width: 100%;
     background-color: var(--color-blue);
-    /* height: 100vh; */
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: var(--text-rubik);
-
 }
 
-.tarotistas-precios-header-container {
-    width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+.tarotistas-precios-header-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,14 +14,12 @@
 
 .tarotistas-precios-header h1 {
     color: var(--color-yellow);
-    font-size: 80px;
-    line-height: 95px;
-    font-weight: normal;
 }
 
 .tarotistas-precios-header h1 img {
     position: absolute;
     margin-left: 25px;
+    height: 70px;
 }
 
 .tarifas {
@@ -34,23 +27,15 @@
 }
 
 .tarifa-arcana-mayor {
-    width: 391px;
-    height: 576px;
+    width: 312px;
+    height: 460px;
     background-color: #000;
-    border-radius: 15px;
-    padding: 60px 50px;
+    border-radius: 8px;
+    /* padding: 60px 50px; */
+    padding: 48px 40px;
     position: relative;
-    /* display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
-.tarifa-arcana-mayor .square {
-    background-color: #AAA;
-    border-radius: 10px;
-    width: 117px;
-    height: 126px;
-}
 
 .tarifa-arcana-mayor p {
     font-size: 24px;
@@ -61,13 +46,13 @@
 
 .tarifa-arcana-mayor .time {
     color: var(--color-purple);
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 64px;
+    line-height: 76px;
 }
 
 .tarifa-arcana-mayor .price {
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 20px;
     color: #fff;
     margin-bottom: 25px;
 }
@@ -87,9 +72,17 @@
     height: 22px;
     margin-left: 15px;
 }
-
+.tarifa-arcana-mayor .tarifas-anim{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+    width: auto; height: auto;
+    /* background-color: tomato; */
+    transform: scale(1.3) translateY(-2%) translateX(-5%);
+}
 .tarifa-arcana-mayor .planet {
     position: absolute;
+    display: none;
 }
 
 .tarifa-arcana-mayor .planet-green {
@@ -118,10 +111,12 @@
 }
 
 .tarifa-arcana-menor {
-    width: 391px;
-    height: 576px;
+    /* width: 391px;
+    height: 576px; */
+    width: 312px;
+    height: 460px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 8px;
     margin-left: 20px;
     padding: 60px 50px;
 }
