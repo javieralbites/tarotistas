@@ -107,7 +107,7 @@
 
 @media (max-width:992px) {
     .seccion-slides{
-        margin-top: 100px;
+        padding-top: 85px;
         height: auto;
     }
     .seccion-slides .slide{
@@ -122,7 +122,7 @@
         margin: 20px;
         z-index: 2;
         bottom: initial;
-        top: 150px;
+        top: 220px;
     }
     .seccion-slides .slide .slide-content{
         padding-top: 50px;

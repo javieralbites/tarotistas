@@ -1,3 +1,4 @@
+// PANO LOADING
 document.addEventListener('DOMContentLoaded', () => {
   var tl = gsap.timeline()
   tl.to('.loadingPano img', {
@@ -30,18 +31,14 @@ window.addEventListener("scroll", () => {
 });
 
 // MENU 
-function menuOnClick() {
-  document.querySelector(".menu-btn").classList.toggle("change");
-  document.querySelector(".menu").classList.toggle("change");
-  if (window.scrollY > 0) {
-    document.querySelector("nav").classList.toggle("sticky")
-  }
-}
+// function menuOnClick() {
+//   document.querySelector(".menu-btn").classList.toggle("change");
+//   document.querySelector(".menu").classList.toggle("change");
+//   if (window.scrollY > 0) {
+//     document.querySelector("nav").classList.toggle("sticky")
+//   }
+// }
 
-// gsap.from('.menu ul li', {
-//   opacity: 0,
-//   x:30
-// })
 
 // SOBRE TAROTISTAS FAQ ACCORDEON 
 const acc_btns = document.querySelectorAll(".faq-header");
@@ -131,27 +128,40 @@ function inicioSesionActive() {
 
 // MENU MOBILE
 var tlMenuMobile = gsap.timeline({paused:true})
-    tlMenuMobile.to(".menu", {
-      display: "inline-flex"
+    tlMenuMobile.fromTo(".menu", {
+      display: "none"
+    },{
+      display: "inline-flex",duration:0.1
     });
     tlMenuMobile.fromTo(".menu", {
       opacity: 0
     }, {
-      opacity: 1
+      opacity: 1,duration:0.5
     })
     tlMenuMobile.fromTo(".menu ul li a", {
-      opacity: 0
+      opacity: 0,y:10
     }, {
       opacity: 1,
-      stagger: 0.1
+      stagger: 0.1,y:0,
     })
     
 function menuMobileOnClick() {
+  document.querySelector(".menu-btn").classList.toggle("change");
+  document.querySelector(".menu").classList.toggle("change");
+  if (window.scrollY > 0) {
+    document.querySelector("nav").classList.toggle("sticky")
+  }
   if (!document.querySelector(".btn-menu-mobile").classList.contains("active")) {
     document.querySelector(".btn-menu-mobile").classList.add("active")
+    document.querySelector(".nav-mobile").classList.add("active")
+    document.querySelector(".btn-menu-mobile-cuenta").classList.add("active")
+    document.querySelector(".btn-menu-mobile-call").classList.add("active")
     tlMenuMobile.play()
   } else {
     tlMenuMobile.reverse();
     document.querySelector(".btn-menu-mobile").classList.remove("active");
+    document.querySelector(".nav-mobile").classList.remove("active")
+    document.querySelector(".btn-menu-mobile-cuenta").classList.remove("active")
+    document.querySelector(".btn-menu-mobile-call").classList.remove("active")
   }
 }

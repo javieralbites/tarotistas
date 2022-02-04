@@ -10,23 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/servicios.css">
 </head>
 
 <body>
+    <!-- BARRA MENU DESKTOP  -->
     <nav>
         <div class="nav-container">
             <div class="logo">
                 <a href="/">
-                    <img src="./images/logo.png" alt="logo-tarotistas-en-vivo">
+                    <img class="logo-desktop" src="./images/logo.png" alt="logo-tarotistas-en-vivo">
+                    <img class="logo-mobile" src="./images/logo-tarotistas-mobile.svg" alt="logo-tarotistas-en-vivo">
                 </a>
             </div>
             <div class="nav-links">
                 <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">Llámanos</a>
                 <a href="/registro.html"><img src="./images/icons/eye.svg" alt="lamanos-eye">Mi Cuenta</a>
-                <div class="menu-btn" onclick="menuOnClick()">
+                <div class="menu-btn" onclick="menuMobileOnClick()">
                     <div class="textspin"></div>
                     <div class="bar1 bar"></div>
                     <div class="bar2 bar"></div>
@@ -35,6 +37,8 @@
             </div>
         </div>
     </nav>
+    <!-- BARRA MENU DESKTOP  -->
+    <!-- MENU  -->
     <div class="menu">
         <ul>
             <li><a href="/servicios.html">Servicios</a></li>
@@ -46,6 +50,7 @@
             <li><a href="/">Blog</a></li>
         </ul>
     </div>
+    <!-- MENU FIN -->
     <section class="servicios-tarotistas-header">
         <div class=" container-content servicios-tarotistas-header-flex">
             <div>
@@ -53,11 +58,12 @@
                 <h1><img src="./images/icons/square-black.png"> en vivo</h1>
                 <p>Lectura de tarot en vivo y <br> en directo con un servicio de <br> persona a persona, conozca <br>
                     pasado presente y futuro a través <br> de los mejores profesionales.</p>
-                <a class="btn btn-blue" href="/">Consulta tu Vidente <img src="./images/icons/arrowwhite.svg" alt="consulta-tu-vidente"></a>
+                <a class="btn btn-blue" href="/">Consulta tu Vidente <img src="./images/icons/arrowwhite.svg"
+                        alt="consulta-tu-vidente"></a>
             </div>
             <div>
-                <lottie-player class="servicios-tarotistas-header-anim" src="./images/animaciones/la-fuerza.json" background="transparent" speed="1"
-                     loop autoplay></lottie-player>
+                <lottie-player class="servicios-tarotistas-header-anim" src="./images/animaciones/la-fuerza.json"
+                    background="transparent" speed="1" loop autoplay></lottie-player>
             </div>
         </div>
     </section>
@@ -93,154 +99,171 @@
         <div class="container-content">
             <h1>Nuestros Tarotistas</h1>
         </div>
-    
-    <div class="seccion-tarotistas-items">
-        <div class="seccion-tarotistas-item">
-            <div class="seccion-tarotistas-item-img">
-                <img src="./images/tarotistas/tarotista1.png" alt="tarotista1">
+
+        <div class="seccion-tarotistas-items">
+            <div class="seccion-tarotistas-item">
+                <div class="seccion-tarotistas-item-img">
+                    <img src="./images/tarotistas/tarotista1.png" alt="tarotista1">
+                </div>
+                <div class="seccion-tarotistas-item-content">
+                    <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                    <h4>Tarotista</h4>
+                    <p>Especialista en
+                        lectura de manos
+                        10 años de exp.</p>
+                    <a href="/">Llamar</a>
+                    <a href="/">Ver</a>
+                </div>
             </div>
-            <div class="seccion-tarotistas-item-content">
-                <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                <h4>Tarotista</h4>
-                <p>Especialista en
-                    lectura de manos
-                    10 años de exp.</p>
-                <a href="/">Llamar</a>
-                <a href="/">Ver</a>
+            <div class="seccion-tarotistas-item">
+                <div class="seccion-tarotistas-item-img">
+                    <img src="./images/tarotistas/tarotista2.png" alt="tarotista2">
+                </div>
+                <div class="seccion-tarotistas-item-content">
+                    <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                    <h4>Tarotista</h4>
+                    <p>Especialista en
+                        lectura de manos
+                        10 años de exp.</p>
+                    <a href="/">Llamar</a>
+                    <a href="/">Ver</a>
+                </div>
             </div>
+            <div class="seccion-tarotistas-item">
+                <div class="seccion-tarotistas-item-img">
+                    <img src="./images/tarotistas/tarotista3.png" alt="tarotista3">
+                </div>
+                <div class="seccion-tarotistas-item-content">
+                    <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                    <h4>Tarotista</h4>
+                    <p>Especialista en
+                        lectura de manos
+                        10 años de exp.</p>
+                    <a href="/">Llamar</a>
+                    <a href="/">Ver</a>
+                </div>
+            </div>
+
         </div>
-        <div class="seccion-tarotistas-item">
-            <div class="seccion-tarotistas-item-img">
-                <img src="./images/tarotistas/tarotista2.png" alt="tarotista2">
-            </div>
-            <div class="seccion-tarotistas-item-content">
-                <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                <h4>Tarotista</h4>
-                <p>Especialista en
-                    lectura de manos
-                    10 años de exp.</p>
-                <a href="/">Llamar</a>
-                <a href="/">Ver</a>
-            </div>
-        </div>
-        <div class="seccion-tarotistas-item">
-            <div class="seccion-tarotistas-item-img">
-                <img src="./images/tarotistas/tarotista3.png" alt="tarotista3">
-            </div>
-            <div class="seccion-tarotistas-item-content">
-                <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                <h4>Tarotista</h4>
-                <p>Especialista en
-                    lectura de manos
-                    10 años de exp.</p>
-                <a href="/">Llamar</a>
-                <a href="/">Ver</a>
-            </div>
-        </div>
-        
-    </div>
-    <div class="swiper home-tarotistas-slides-mobile">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide ">
-                <div class="home-tarotistas-slides-mobile-card">
-                    <div class="home-tarotistas-slides-mobile-card-img">
-                        <img src="./images/tarotistas/tarotista1.png" alt="tarotista1">
+        <div class="swiper home-tarotistas-slides-mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                    <div class="home-tarotistas-slides-mobile-card">
+                        <div class="home-tarotistas-slides-mobile-card-img">
+                            <img src="./images/tarotistas/tarotista1.png" alt="tarotista1">
+                        </div>
+                        <div class="home-tarotistas-slides-mobile-card-content">
+                            <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                            <p class="nombre-tarotista">Tarotista</p>
+                            <p class="desc-tarotista">Especialista en
+                                lectura de manos
+                                10 años de exp.</p>
+                            <a class="btn-citar" href="/">Citar</a>
+                            <a class="btn-ver" href="/">Ver</a>
+                        </div>
                     </div>
-                    <div class="home-tarotistas-slides-mobile-card-content">
-                        <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                        <p class="nombre-tarotista">Tarotista</p>
-                        <p class="desc-tarotista">Especialista en
-                            lectura de manos
-                            10 años de exp.</p>
-                        <a class="btn-citar" href="/">Citar</a>
-                        <a class="btn-ver" href="/">Ver</a>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="home-tarotistas-slides-mobile-card">
+                        <div class="home-tarotistas-slides-mobile-card-img">
+                            <img src="./images/tarotistas/tarotista2.png" alt="tarotista1">
+                        </div>
+                        <div class="home-tarotistas-slides-mobile-card-content">
+                            <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                            <p class="nombre-tarotista">Tarotista</p>
+                            <p class="desc-tarotista">Especialista en
+                                lectura de manos
+                                10 años de exp.</p>
+                            <a class="btn-citar" href="/">Citar</a>
+                            <a class="btn-ver" href="/">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="home-tarotistas-slides-mobile-card">
+                        <div class="home-tarotistas-slides-mobile-card-img">
+                            <img src="./images/tarotistas/tarotista3.png" alt="tarotista1">
+                        </div>
+                        <div class="home-tarotistas-slides-mobile-card-content">
+                            <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
+                            <p class="nombre-tarotista">Tarotista</p>
+                            <p class="desc-tarotista">Especialista en
+                                lectura de manos
+                                10 años de exp.</p>
+                            <a class="btn-citar" href="/">Citar</a>
+                            <a class="btn-ver" href="/">Ver</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide ">
-                <div class="home-tarotistas-slides-mobile-card">
-                    <div class="home-tarotistas-slides-mobile-card-img">
-                        <img src="./images/tarotistas/tarotista2.png" alt="tarotista1">
-                    </div>
-                    <div class="home-tarotistas-slides-mobile-card-content">
-                        <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                        <p class="nombre-tarotista">Tarotista</p>
-                        <p class="desc-tarotista">Especialista en
-                            lectura de manos
-                            10 años de exp.</p>
-                        <a class="btn-citar" href="/">Citar</a>
-                        <a class="btn-ver" href="/">Ver</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide ">
-                <div class="home-tarotistas-slides-mobile-card">
-                    <div class="home-tarotistas-slides-mobile-card-img">
-                        <img src="./images/tarotistas/tarotista3.png" alt="tarotista1">
-                    </div>
-                    <div class="home-tarotistas-slides-mobile-card-content">
-                        <div class="like">15 <img src="./images/tarotistas/like-tarotistas.svg" alt="like"></div>
-                        <p class="nombre-tarotista">Tarotista</p>
-                        <p class="desc-tarotista">Especialista en
-                            lectura de manos
-                            10 años de exp.</p>
-                        <a class="btn-citar" href="/">Citar</a>
-                        <a class="btn-ver" href="/">Ver</a>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
         <div class="btn-box-center">
             <a class="btn btn-black" href="/nuestros-tarotistas.html">Ver Todos <img src="./images/icons/arrowwhite.svg"
                     alt="ver-tarotistas"></a>
         </div>
-</div>
+    </div>
     <section class="consulta-con-nosotros">
         <div class="container-content">
-            <h1>Consulta con <br> nosotros aquí <img src="./images/icons/arrow-yellow-turn.svg" alt="consulta-con-nosotros">
+            <h1>Consulta con <br> nosotros aquí <img src="./images/icons/arrow-yellow-turn.svg"
+                    alt="consulta-con-nosotros">
             </h1>
             <p>info@tarotistasenvivo.com</p>
         </div>
     </section>
+    <!-- FOOTER  -->
     <footer>
-        <div class="mainfooter">
-            <div class="mainfooter-logo">
-                <img src="./images/logo.png" alt="logo-tarotistas-en-vivo">
-                <button>Consulta tu Vidente <img src="./images/icons/arrowwhite.svg" alt="colsulta-tu-vidente"></button>
-            </div>
-            <div class="mainfooter-links">
-                <div>
-                    <a href=""><img src="./images/icons/phone.svg" alt="llamanos-icon">7866 050580</a>
-                    <a href=""><img src="./images/icons/mail.svg"
-                            alt="correo-tarotistas-en-vivo">info@tarotistasenvivo.com</a>
+        <div class="container-footer">
+            <div class="mainfooter">
+                <div class="mainfooter-logo">
+                    <img src="./images/logo.png" alt="logo-tarotistas-en-vivo">
+                    <a class="btn btn-blue" href="/nuestros-tarotistas.html">Consulta tu Vidente <img
+                            src="./images/icons/arrowwhite.svg" alt="colsulta-tu-vidente"></a>
                 </div>
-                <div>
-                    <a href="/">Servicios</a>
-                    <a href="/nuestros-tarotistas.html">Tarotistas</a>
-                    <a href="/">Precio</a>
+                <div class="mainfooter-links">
+                    <div>
+                        <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">7866 050580</a>
+                        <a href="/"><img src="./images/icons/mail.svg"
+                                alt="correo-tarotistas-en-vivo">info@tarotistasenvivo.com</a>
+                    </div>
+                    <div>
+                        <a href="/servicios.html">Servicios</a>
+                        <a href="/nuestros-tarotistas.html">Tarotistas</a>
+                        <a href="/">Precio</a>
+                    </div>
+                    <div>
+                        <a href="/sobre-tarotistas.html">Sobre Tarotistas</a>
+                        <a href="/">Preguntas Frecuentes</a>
+                        <a href="/">Blog</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="/">Sobre Tarotistas</a>
-                    <a href="/">Preguntas Frecuentes</a>
-                    <a href="/">Blog</a>
+                <div class="mainfooter-socials">
+                    <a href="/" target="_blank"><img src="./images/icons/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href="/" target="_blank"><img src="./images/icons/instagram-logo.svg" alt="instagram-logo"></a>
                 </div>
             </div>
-            <div class="mainfooter-socials">
-                <a href="/"><img src="./images/icons/facebook-logo.svg" alt="facebook-logo"></a>
-                <a href="/"><img src="./images/icons/instagram-logo.svg" alt="instagram-logo"></a>
+            <div class="subfooter">
+                <div>
+                    <a href="/">Términos y condiciones</a> <span>|</span>
+                    <a href="/">Políticas de Privacidad</a> <span>|</span>
+                    <a href="/">Soporte</a>
+                </div>
+                <p>Hecho por StartDesignGroup 2022</p>
             </div>
-        </div>
-        <div class="subfooter">
-            <div>
-                <a href="/">Términos y condiciones</a> <span>|</span>
-                <a href="/">Políticas de Privacidad</a> <span>|</span>
-                <a href="/">Soporte</a>
-            </div>
-            <p>Hecho por StartDesignGroup 2022</p>
         </div>
 
     </footer>
+    <!-- FOOTER FIN -->
+    <!-- NAVBAR BOTTOM  MOBILE  -->
+    <div class="nav-mobile">
+        <div class="btn-menu-mobile-cuenta"><a href="/registro.html"><img src="./images/btn-account-mobile.svg"></a>
+        </div>
+        <div class="btn-menu-mobile-call"><a href="/"><img src="./images/btn-call-mobile.svg"> </a></div>
+        <div class="btn-menu-mobile" onclick="menuMobileOnClick()">
+            <!-- <img src="./images/textspin-menu-mobile.svg"> -->
+        </div>
+    </div>
+    <!-- NAVBAR BOTTOM  MOBILE FIN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/lottie-player.js"></script>
     <script src="./js/main.js"></script>
