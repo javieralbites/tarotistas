@@ -36,7 +36,7 @@ p {
 }
 
 .container-content {
-    width: 1200px;
+    width: 1150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -318,6 +318,7 @@ nav .logo img.logo-mobile {
 @media (max-width:992px) {
     .menu ul{
         margin-right: 13%;
+        margin-left: 13%;
     }
     .menu a {
         font-size: 35px;
@@ -329,6 +330,7 @@ nav .logo img.logo-mobile {
 @media (max-width:430px) {
     .menu ul{
         margin-right: 25px;
+        margin-left: 25px;
     }
 }
  /* MENU FIN */

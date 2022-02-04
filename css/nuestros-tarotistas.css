@@ -245,15 +245,18 @@
         padding-top: 70px;
         height: auto;
     }
+
     .seccion-slides .slide .slide-img {
         height: 250px;
     }
+
     .seccion-slides .slide .slide-content {
         padding-top: 30px;
         padding-left: 20px;
         padding-bottom: 30px;
         padding-right: 20px;
     }
+
     .nuestros-tarotistas-slider-btn {
         width: 32px;
         height: 32px;
@@ -263,10 +266,12 @@
     .nuestros-tarotistas-slider-btn img {
         width: 20px;
     }
-    .seccion-slides .slide .slide-content .like{
+
+    .seccion-slides .slide .slide-content .like {
         margin-bottom: 10px;
     }
-    .seccion-slides .slide .slide-content p{
+
+    .seccion-slides .slide .slide-content p {
         margin-bottom: 10px;
     }
 }

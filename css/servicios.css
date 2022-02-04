@@ -58,7 +58,7 @@
     }
 
     .servicios-tarotistas-header-anim {
-        width: 100%;
+        width: auto;
         height: auto;
         transform: scale(1.2);
         margin-top: 55px;
@@ -69,9 +69,19 @@
 @media (max-width:688px) {
     .servicios-tarotistas-header-flex {
         justify-content: center;
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: column-reverse;
         gap: 0px;
+    }
+    .servicios-tarotistas-header-anim{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:500px) {
+    .servicios-tarotistas-header-anim{
+        width: 100%;
     }
 }
 
