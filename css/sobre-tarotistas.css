@@ -1,3 +1,4 @@
+/* SOBRE TAROTISTAS HEADER  */
 .sobre-tarotistas-header{
     background-color: #fff;
     padding-top: 100px;
@@ -36,7 +37,8 @@
         margin-top: 20px;
     }
 }
-
+/* SOBRE TAROTISTAS HEADER FIN */
+/* SOBRE TAROTISTAS ABOUT  */
 .sobre-tarotistas-about{
     background-color: var(--color-yellow);
     padding-top: 100px;
@@ -54,7 +56,12 @@
     max-width: 150px;
     transform: scale(2) translateY(-50px) translateX(0px);
 }   
-
+@media (max-width:1200px) {
+    .sobre-tarotistas-about img{
+        max-width: 120px;
+        transform: scale(2) translateY(-50px) translateX(-30px);
+    } 
+}
 @media (max-width:992px) {
     .sobre-tarotistas-about{
         padding-top: 70px;
@@ -70,15 +77,20 @@
        margin-bottom: 20px;
     }
     .sobre-tarotistas-about img{
-        max-width: 150px;
-        transform: scale(.9) translateY(-50px) translateX(180px) rotate(55deg);
+        display: none;
     }   
     .sobre-tarotistas-about p br{
         display: none;
     }
 }
-
-
+@media (max-width:688px) {
+    .sobre-tarotistas-about img{
+        display: block;
+        transform: scale(.9) translateY(-50px) translateX(180px) rotate(55deg);
+    }  
+}
+/* SOBRE TAROTISTAS ABOUT FIN */
+/* SOBRE TAROTISTAS FAQ  */
 .sobre-tarotistas-faq{
     background-color: var(--color-grey-light);
     font-family: var(--text-rubik);
@@ -162,3 +174,4 @@
         max-height: 20rem;
     }
 }
+/* SOBRE TAROTISTAS FAQ FIN */

@@ -107,7 +107,7 @@ p {
         margin-left: 15px;
     }
 }
-
+ /* LOADING PANO   */
 .loadingPano {
     width: 100%;
     height: 100vh;
@@ -122,7 +122,8 @@ p {
 .loadingPano img {
     animation: rotatetext 5s infinite linear;
 }
-
+ /* LOADING PANO  FIN */
+ /* NAVBAR  */
 .nav-container {
     width: 1300px;
     margin-left: auto;
@@ -215,7 +216,8 @@ nav .logo img.logo-mobile {
         display: block;
     }
 }
-
+ /* NAVBAR  FIN*/
+ /* MENU  */
 .menu-btn {
     height: 70px;
     width: 70px;
@@ -329,6 +331,7 @@ nav .logo img.logo-mobile {
         margin-right: 25px;
     }
 }
+ /* MENU FIN */
 /* SECCION HEADER  */
 .header {
     position: relative;

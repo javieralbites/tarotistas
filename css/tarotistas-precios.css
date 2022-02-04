@@ -1,3 +1,4 @@
+/* TAROTISTAS PRECIOS HEADER */
 .tarotistas-precios-header {
     width: 100%;
     background-color: var(--color-blue);
@@ -28,7 +29,9 @@
 .tarifas {
     display: flex;
 }
-
+.tarifas::-webkit-scrollbar {
+    display: none;
+    }
 .tarifa-arcana-mayor {
     width: 312px;
     height: 460px;
@@ -76,7 +79,6 @@
     margin-left: 15px;
 }
 .tarifa-arcana-mayor .tarifas-anim{
-    /* z-index: 0; */
     position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
     margin: auto;
@@ -188,7 +190,8 @@
         margin-right: 30px;
     }
 }
-
+/* TAROTISTAS PRECIOS HEADER FIN  */
+/* TAROTISTAS PRECIOS CONSULTA  */
 .tarotistas-precios-consulta {
     background-color: var(--color-grey-light);
     padding-top: 100px;
@@ -221,7 +224,8 @@
     .tarotistas-precios-consulta h1 {
         margin-bottom: 40px;
     }
-    
+}
+@media (max-width:688px) {
     .tarotistas-precios-consulta h1 img {
         transform: translateY(0px) translateX(15px);
         height: 90px;
@@ -232,4 +236,4 @@
         display: none;
     }
 }
-
+/* TAROTISTAS PRECIOS CONSULTA  FIN*/
