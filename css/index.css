@@ -858,6 +858,7 @@ nav .logo img.logo-mobile {
     font-size: 16px;
     font-weight: var(--text-semibold);
     font-family: var(--text-rubik);
+    text-align: center;
 }
 
 .home-tarotistas-slides-mobile-card-content .btn-citar {
@@ -935,7 +936,19 @@ nav .logo img.logo-mobile {
         margin-top: 40px;
     }
 }
-
+@media (max-width:359px) {
+    .home-tarotistas-slides-mobile-card-img img{
+        margin-top: 10px;
+    }
+    .home-tarotistas-slides-mobile-card-content .btn-citar{
+        margin-bottom: 5px;
+        display: block;
+        margin-right: 0px
+    }
+    .home-tarotistas-slides-mobile-card-content .btn-ver{
+        display: block;
+    }
+}
 /* SECCION TAROTISTAS FIN  */
 /* SECCION TESTIMONIOS  */
 .seccion-testimonios {
@@ -1001,7 +1014,7 @@ nav .logo img.logo-mobile {
 }
 
 .swiper-testimonio .swiper-wrapper {
-    margin-left: 300px;
+    margin-left: 290px;
 }
 
 .swiper-testimonio-btn-next-desktop {
@@ -1009,7 +1022,7 @@ nav .logo img.logo-mobile {
     bottom: 0;
     top: 0;
     bottom: 0;
-    right: 13%;
+    right: 15.5%;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 10;
@@ -1485,8 +1498,6 @@ footer {
 }
 
 .btn-menu-mobile.active {
-    /* transform: rotate(45deg); */
-    
     z-index: 30;
     background-image: url(../images/btn-menu-mobile-close.svg);
 }
