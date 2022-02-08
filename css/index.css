@@ -25,7 +25,7 @@ h1 {
     font-size: 80px;
     line-height: 75px;
     font-family: var(--text-rubik);
-    font-weight: var(--text-regular);
+    font-weight: var(--text-semibold);
 }
 
 p {
@@ -1314,7 +1314,6 @@ nav .logo img.logo-mobile {
 .seccion-empiezaAqui p {
     text-align: center;
     color: #fff;
- 
 }
 
 .seccion-empiezaAqui p::selection {

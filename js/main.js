@@ -126,6 +126,25 @@ function inicioSesionActive() {
   document.querySelector(".btn-inicioSesion").classList.add("active")
 }
 
+// HIDE PASSWORD 
+function hidePassSignUp() {
+  var userpassword = document.getElementById("userPasswordSignUp");
+  if (userpassword.type == "password") {
+    userpassword.type = "text";
+  } else {
+    userpassword.type = "password";
+  }
+  document.querySelector(".btn-password").classList.toggle("hidepassword");
+}
+function hidePass() {
+  var userpassword = document.getElementById("userPasswordLogin");
+  if (userpassword.type == "password") {
+    userpassword.type = "text";
+  } else {
+    userpassword.type = "password";
+  }
+  document.querySelector(".btn-password").classList.toggle("hidepassword");
+}
 // MENU MOBILE
 var tlMenuMobile = gsap.timeline({paused:true})
     tlMenuMobile.fromTo(".menu", {
