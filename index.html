@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -23,15 +24,10 @@
     <!-- BARRA MENU DESKTOP  -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <a href="/">
-                    <img class="logo-desktop" src="./images/logo.png" alt="logo-tarotistas-en-vivo">
-                    <img class="logo-mobile" src="./images/logo-tarotistas-mobile.svg" alt="logo-tarotistas-en-vivo">
-                </a>
-            </div>
+            <a href="/" class="logo"></a>
             <div class="nav-links">
-                <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">Llámanos</a>
-                <a href="/registro.html"><img src="./images/icons/eye.svg" alt="lamanos-eye">Mi Cuenta</a>
+                <a href="/"><span></span>Llámanos</a>
+                <a href="/registro.html"><img src="./images/icons/eye.svg" alt="">Mi Cuenta</a>
                 <div class="menu-btn" onclick="menuMobileOnClick()">
                     <div class="textspin"></div>
                     <div class="bar1 bar"></div>
@@ -140,7 +136,7 @@
             <lottie-player class="anim-steps-eye" src="./images/animaciones/ojo.json" background="transparent" speed="1"
                 style="width: auto; height: 150px;" loop autoplay></lottie-player>
             <lottie-player class="anim-steps" src="./images/animaciones/steps.json" background="transparent" speed=".5"
-                 loop autoplay></lottie-player>
+                loop autoplay></lottie-player>
         </div>
         <lottie-player class="pasos-anim-star-blue" src="./images/animaciones/star2.json" background="transparent"
             speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
@@ -352,57 +348,59 @@
             <h1>Empieza aquí</h1>
             <p>Lorem Ipsum <br>
                 Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit.</p>
-                <div class="btn-box-center">
-                    <a class="btn btn-black" href="/"><img src="./images/icons/phone.svg" alt="llámanos"> Llámanos</a>
-                </div>
+            <div class="btn-box-center">
+                <a class="btn btn-black" href="/"><img src="./images/icons/phone-white.svg" alt="llámanos"> Llámanos</a>
+            </div>
         </div>
     </section>
     <!-- SECCION EMPIEZA AQUI FIN-->
     <!-- FOOTER  -->
     <footer>
         <div class="container-footer">
-        <div class="mainfooter">
-            <div class="mainfooter-logo">
-                <img src="./images/logo.png" alt="logo-tarotistas-en-vivo">
-                <a class="btn btn-blue" href="/nuestros-tarotistas.html">Consulta tu Vidente <img src="./images/icons/arrowwhite.svg" alt="colsulta-tu-vidente"></a>
+            <div class="mainfooter">
+                <div class="mainfooter-logo">
+                    <img src="./images/logo.png" alt="logo-tarotistas-en-vivo">
+                    <a class="btn btn-blue" href="/nuestros-tarotistas.html">Consulta tu Vidente <img
+                            src="./images/icons/arrowwhite.svg" alt="colsulta-tu-vidente"></a>
+                </div>
+                <div class="mainfooter-links">
+                    <div>
+                        <a href="/"><img src="./images/icons/phone-white.svg" alt="llamanos-icon">7866 050580</a>
+                        <a href="/"><img src="./images/icons/mail.svg"
+                                alt="correo-tarotistas-en-vivo">info@tarotistasenvivo.com</a>
+                    </div>
+                    <div>
+                        <a href="/servicios.html">Servicios</a>
+                        <a href="/nuestros-tarotistas.html">Tarotistas</a>
+                        <a href="/">Precio</a>
+                    </div>
+                    <div>
+                        <a href="/sobre-tarotistas.html">Sobre Tarotistas</a>
+                        <a href="/">Preguntas Frecuentes</a>
+                        <a href="/">Blog</a>
+                    </div>
+                </div>
+                <div class="mainfooter-socials">
+                    <a href="/" target="_blank"><img src="./images/icons/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href="/" target="_blank"><img src="./images/icons/instagram-logo.svg" alt="instagram-logo"></a>
+                </div>
             </div>
-            <div class="mainfooter-links">
+            <div class="subfooter">
                 <div>
-                    <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">7866 050580</a>
-                    <a href="/"><img src="./images/icons/mail.svg"
-                            alt="correo-tarotistas-en-vivo">info@tarotistasenvivo.com</a>
+                    <a href="/">Términos y condiciones</a> <span>|</span>
+                    <a href="/">Políticas de Privacidad</a> <span>|</span>
+                    <a href="/">Soporte</a>
                 </div>
-                <div>
-                    <a href="/servicios.html">Servicios</a>
-                    <a href="/nuestros-tarotistas.html">Tarotistas</a>
-                    <a href="/">Precio</a>
-                </div>
-                <div>
-                    <a href="/sobre-tarotistas.html">Sobre Tarotistas</a>
-                    <a href="/">Preguntas Frecuentes</a>
-                    <a href="/">Blog</a>
-                </div>
-            </div>
-            <div class="mainfooter-socials">
-                <a href="/" target="_blank"><img src="./images/icons/facebook-logo.svg" alt="facebook-logo"></a>
-                <a href="/" target="_blank"><img src="./images/icons/instagram-logo.svg" alt="instagram-logo"></a>
+                <p>Hecho por StartDesignGroup 2022</p>
             </div>
         </div>
-        <div class="subfooter">
-            <div>
-                <a href="/">Términos y condiciones</a> <span>|</span>
-                <a href="/">Políticas de Privacidad</a> <span>|</span>
-                <a href="/">Soporte</a>
-            </div>
-            <p>Hecho por StartDesignGroup 2022</p>
-        </div>
-    </div>
-    
+
     </footer>
     <!-- FOOTER FIN -->
     <!-- NAVBAR BOTTOM  MOBILE  -->
     <div class="nav-mobile">
-        <div class="btn-menu-mobile-cuenta"><a href="/registro.html"><img src="./images/btn-account-mobile.svg"></a></div>
+        <div class="btn-menu-mobile-cuenta"><a href="/registro.html"><img src="./images/btn-account-mobile.svg"></a>
+        </div>
         <div class="btn-menu-mobile-call"><a href="/"><img src="./images/btn-call-mobile.svg"> </a></div>
         <div class="btn-menu-mobile" onclick="menuMobileOnClick()">
         </div>

@@ -297,8 +297,8 @@
 }
 @media (max-width:992px) {
     .pageLogin {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .btn-volver {
@@ -319,7 +319,6 @@
         width: 82%;
         margin-top: 30px;
         padding-bottom: 20px;
-
     }
 
     .tab-content .loginfacebook {
@@ -336,7 +335,6 @@
 
     .tab-content .logingoogle {
         font-size: 16px;
-        /* margin-bottom: 16px; */
         padding-top: 16px;
         padding-bottom: 16px;
     }

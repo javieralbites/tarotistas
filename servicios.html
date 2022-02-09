@@ -11,23 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/servicios.css">
 </head>
 
 <body>
+    <!-- LOADING PANO  -->
+    <div class="loadingPano">
+        <img src="./images/textspin.png">
+    </div>
+    <!-- LOADING PANO  FIN-->
     <!-- BARRA MENU DESKTOP  -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <a href="/">
-                    <img class="logo-desktop" src="./images/logo.png" alt="logo-tarotistas-en-vivo">
-                    <img class="logo-mobile" src="./images/logo-tarotistas-mobile.svg" alt="logo-tarotistas-en-vivo">
-                </a>
-            </div>
+            <a href="/" class="logo"></a>
             <div class="nav-links">
-                <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">Llámanos</a>
-                <a href="/registro.html"><img src="./images/icons/eye.svg" alt="lamanos-eye">Mi Cuenta</a>
+                <a href="/"><span></span>Llámanos</a>
+                <a href="/registro.html"><img src="./images/icons/eye.svg" alt="">Mi Cuenta</a>
                 <div class="menu-btn" onclick="menuMobileOnClick()">
                     <div class="textspin"></div>
                     <div class="bar1 bar"></div>
@@ -227,7 +227,7 @@
                 </div>
                 <div class="mainfooter-links">
                     <div>
-                        <a href="/"><img src="./images/icons/phone.svg" alt="llamanos-icon">7866 050580</a>
+                        <a href="/"><img src="./images/icons/phone-white.svg" alt="llamanos-icon">7866 050580</a>
                         <a href="/"><img src="./images/icons/mail.svg"
                                 alt="correo-tarotistas-en-vivo">info@tarotistasenvivo.com</a>
                     </div>
@@ -268,6 +268,7 @@
         </div>
     </div>
     <!-- NAVBAR BOTTOM  MOBILE FIN -->
+    <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/lottie-player.js"></script>

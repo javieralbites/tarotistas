@@ -170,6 +170,8 @@ var tlMenuMobile = gsap.timeline({paused:true})
 function menuMobileOnClick() {
   document.querySelector(".menu-btn").classList.toggle("change");
   document.querySelector(".menu").classList.toggle("change");
+  document.querySelector("nav").classList.toggle("active")
+  console.log("navbar active");
   if (window.scrollY > 0) {
     document.querySelector("nav").classList.toggle("sticky")
   }
@@ -178,9 +180,9 @@ function menuMobileOnClick() {
     document.querySelector(".nav-mobile").classList.add("active")
     document.querySelector(".btn-menu-mobile-cuenta").classList.add("active")
     document.querySelector(".btn-menu-mobile-call").classList.add("active")
-    tlMenuMobile.play()
+    this.tlMenuMobile.play()
   } else {
-    tlMenuMobile.reverse();
+    this.tlMenuMobile.reverse();
     document.querySelector(".btn-menu-mobile").classList.remove("active");
     document.querySelector(".nav-mobile").classList.remove("active")
     document.querySelector(".btn-menu-mobile-cuenta").classList.remove("active")

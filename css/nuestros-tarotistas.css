@@ -1,3 +1,32 @@
+/* NAVBAR  */
+.nav-links a:first-of-type{
+    color: var(--color-blue);
+    box-shadow: inset 0 0 0 2px var(--color-blue);
+}
+.nav-links a:first-of-type span{
+    background-image: url(../images/icons/phone-blue.svg);
+}
+.menu-btn .textspin {
+    filter: invert(1);
+}
+.menu-btn .bar {
+    background-color: #000;
+}
+nav.active .nav-links a:first-of-type, nav.sticky .nav-links a:first-of-type{
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+nav.active .nav-links a:first-of-type span, nav.sticky .nav-links a:first-of-type span{
+    background-image: url(../images/icons/phone-white.svg);
+}
+nav.active .menu-btn .textspin, nav.sticky .menu-btn .textspin {
+    filter: none;
+}
+nav.active .menu-btn .bar, nav.sticky .menu-btn .bar{
+    background-color: #fff;
+}
+/* NAVBAR FIN */
+
 /* SECCION SLIDES  */
 .seccion-slides {
     width: 100%;
@@ -102,15 +131,15 @@
 }
 
 .seccion-slides .slide .slide-content {
-    padding-top: 150px;
-    padding-left: 100px;
+    padding-top: 160px;
+    padding-left: 120px;
     background-color: #EFEFEF;
 }
 
 .seccion-slides .slide .slide-content .like {
     font-weight: var(--text-bold);
     font-size: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .seccion-slides .slide .slide-content p {
@@ -242,7 +271,7 @@
 
 @media (max-width:360px) {
     .seccion-slides {
-        padding-top: 70px;
+        padding-top: 65px;
         height: auto;
     }
 

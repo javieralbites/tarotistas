@@ -1,3 +1,51 @@
+/* NAVBAR  */
+nav .logo{
+    background-image: url(../images/logo3.png);
+}
+.nav-links a:first-of-type{
+    color: var(--color-blue);
+    box-shadow: inset 0 0 0 2px var(--color-blue);
+}
+.nav-links a:first-of-type span{
+    background-image: url(../images/icons/phone-blue.svg);
+}
+.menu-btn .textspin {
+    filter: invert(1);
+}
+.menu-btn .bar {
+    background-color: #000;
+}
+nav.sticky{
+    background-color: var(--color-yellow);
+}
+nav.active .logo{
+    background-image: url(../images/logo.png);
+}
+nav.active .nav-links a:first-of-type{
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+nav.active .nav-links a:first-of-type span{
+    background-image: url(../images/icons/phone-white.svg);
+}
+nav.active .menu-btn .textspin {
+    filter: none;
+}
+nav.active .menu-btn .bar {
+    background-color: #fff;
+}
+@media (max-width:992px) {
+    nav{ background-color: #fff;}
+    nav.sticky{
+        background-color: #fff;
+    }
+    nav.active .logo{
+        background-image: url(../images/logo-tarotistas-mobile.svg);
+    }
+    nav .logo{
+        background-image: url(../images/logo-tarotistas-mobile.svg);
+    }
+}
 /* SERVICIOS TAROTISTAS HEADER   */
 .servicios-tarotistas-header {
     background-color: var(--color-yellow);
@@ -144,6 +192,149 @@
     margin-top: 70px;
 }
 
+.seccion-tarotistas-items {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seccion-tarotistas-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.seccion-tarotistas-item-img img {
+    width: 100%;
+}
+
+.seccion-tarotistas-item-content {
+    font-family: var(--text-rubik);
+}
+
+.seccion-tarotistas-item-content .like {
+    font-size: 24px;
+    font-weight: var(--text-bold);
+}
+
+.seccion-tarotistas-item-content h4 {
+    font-size: 35px;
+    font-weight: var(--text-semibold);
+}
+
+.seccion-tarotistas-item-content p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.seccion-tarotistas-item-content>a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 13px 15px;
+    font-size: 24px;
+}
+
+.seccion-tarotistas-item-content a:first-of-type {
+    background-color: #000;
+    color: #fff;
+    margin-right: 7px;
+}
+
+.seccion-tarotistas-item-content a:last-of-type {
+    box-shadow: inset 0 0 0 2px #000;
+    color: #000;
+}
+
+.home-tarotistas-slides-mobile {
+    display: none;
+    margin-top: 30px;
+}
+
+.home-tarotistas-slides-mobile-card {
+    max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.home-tarotistas-slides-mobile-card-img img {
+    width: 100%;
+}
+
+.home-tarotistas-slides-mobile-card-content .like {
+    font-size: 16px;
+    font-weight: var(--text-bold);
+    font-family: var(--text-rubik);
+    margin-bottom: 15px;
+}
+
+.home-tarotistas-slides-mobile-card-content .like img {
+    height: 25px;
+}
+
+.home-tarotistas-slides-mobile-card-content .nombre-tarotista {
+    font-weight: var(--text-semibold);
+}
+
+.home-tarotistas-slides-mobile-card-content .desc-tarotista {
+    font-size: 16px;
+    font-weight: var(--text-regular);
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.home-tarotistas-slides-mobile-card-content>a {
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: var(--text-semibold);
+    font-family: var(--text-rubik);
+    text-align: center;
+}
+
+.home-tarotistas-slides-mobile-card-content .btn-citar {
+    background-color: #000;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.home-tarotistas-slides-mobile-card-content .btn-ver {
+    background-color: transparent;
+    color: #000;
+    box-shadow: inset 0 0 0 2px #000;
+}
+
+@media (max-width:1300px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 80%;
+    }
+    .seccion-tarotistas-item {
+        gap: 15px;
+    }
+}
+@media (max-width:1025px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        gap: 20px;
+        width: 90%;
+    }
+}
 @media (max-width:992px) {
     .servicios-tarotistas-tarotistas {
         padding-top: 70px;
@@ -160,6 +351,43 @@
 
     .servicios-tarotistas-tarotistas .btn {
         margin-top: 50px;
+    }
+    .seccion-tarotistas-item {
+        gap: 20px;
+    }
+}
+@media (max-width:900px) {
+    .seccion-tarotistas-items {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        width: 70%;
+    }
+    .seccion-tarotistas-item {
+        gap: 50px;
+    }
+}
+@media (max-width:688px) {
+    .seccion-tarotistas-items {
+        display: none;
+    }
+
+    .home-tarotistas-slides-mobile {
+        display: block;
+    }
+
+}
+@media (max-width:359px) {
+    .home-tarotistas-slides-mobile-card-img img{
+        margin-top: 10px;
+    }
+    .home-tarotistas-slides-mobile-card-content .btn-citar{
+        margin-bottom: 5px;
+        display: block;
+        margin-right: 0px
+    }
+    .home-tarotistas-slides-mobile-card-content .btn-ver{
+        display: block;
     }
 }
 /* SECCION TAROTISTAS FIN */
