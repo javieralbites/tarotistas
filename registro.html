@@ -34,7 +34,7 @@
                     </div>
                     <form action="signup">
                         <div class="container-input">
-                            <input id="userNameSignUp" type="text" required>
+                            <input id="userNameSignUp" type="text" placeholder="Nombre de Usuario" required>
                             <label for="userNameSignUp">Nombre de Usuario</label>
                         </div>
                         <div class="container-input">
@@ -42,7 +42,7 @@
                             <label for="userEmailSignUp">Correo electrónico</label>
                         </div>
                         <div class="container-input">
-                            <input id="userPasswordSignUp" type="password"  required>
+                            <input id="userPasswordSignUp" type="password" placeholder="Contraseña"  required>
                             <label for="userPasswordSignUp">Contraseña</label>
                             <span class="btn-password" onclick="hidePassSignUp()"></span>
                         </div>
@@ -60,13 +60,13 @@
                     </div>
                     <form action="login">
                         <div class="container-input">
-                            <input id="userNameLogin" type="text" required>
+                            <input id="userNameLogin" placeholder="Nombre de Usuario" type="text" required>
                             <label for="userNameLogin">Nombre de Usuario</label>
                         </div>
                         <div class="container-input">
-                            <input id="userPasswordLogin" type="password" required>
+                            <input id="userPasswordLogin" placeholder="Contraseña" type="password" required>
                             <label for="userPasswordLogin">Contraseña</label>
-                            <span class="btn-password" onclick="hidePass()"></span>
+                            <span class="btn-password" onclick="hidePassLogin()"></span>
                         </div>
                         <button type="submit">Iniciar Sesión</button>
                     </form>

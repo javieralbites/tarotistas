@@ -510,10 +510,10 @@ nav .logo img.logo-mobile {
     position: relative;
     background-color: #EFEFEF;
 }
-
-.servicios .triangulo {
+.servicios::after{
+    content: '';
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -523,7 +523,6 @@ nav .logo img.logo-mobile {
     height: 30px;
     clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
-
 .servicios-back-text {
     position: absolute;
     display: block;

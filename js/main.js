@@ -128,20 +128,23 @@ function inicioSesionActive() {
 
 // HIDE PASSWORD 
 function hidePassSignUp() {
-  var userpassword = document.getElementById("userPasswordSignUp");
-  if (userpassword.type == "password") {
-    userpassword.type = "text";
+  var userPasswordSignUp = document.getElementById("userPasswordSignUp");
+  if (userPasswordSignUp.type == "password") {
+    userPasswordSignUp.type = "text";
   } else {
-    userpassword.type = "password";
+    userPasswordSignUp.type = "password";
   }
   document.querySelector(".btn-password").classList.toggle("hidepassword");
+  // if (!userPasswordSignUp.value == "") {
+  //   userPasswordSignUp.focus()
+  // }
 }
-function hidePass() {
-  var userpassword = document.getElementById("userPasswordLogin");
-  if (userpassword.type == "password") {
-    userpassword.type = "text";
+function hidePassLogin() {
+  var userPasswordLogin = document.getElementById("userPasswordLogin");
+  if (userPasswordLogin.type == "password") {
+    userPasswordLogin.type = "text";
   } else {
-    userpassword.type = "password";
+    userPasswordLogin.type = "password";
   }
   document.querySelector(".btn-password").classList.toggle("hidepassword");
 }
