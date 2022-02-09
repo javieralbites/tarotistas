@@ -1,6 +1,7 @@
 /* NAVBAR  */
 nav .logo{
-    background-image: url(../images/logo2.png);
+    /* background-image: url(../images/logo2.png); */
+    background-image: url(../images/logo-tarotistas-mobile.svg);
 }
 .nav-links a:first-of-type{
     color: var(--color-blue);
