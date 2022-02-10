@@ -329,8 +329,16 @@
                     <!-- <img src="./images/icons/home-preguntas-arrowblack.svg"> -->
                     <img src="./images/icons/arrow-black-large.svg"></h1>
                 <form action="action">
-                    <textarea required name="form" id="form" placeholder="Escribe tu pregunta"></textarea>
-                    <input required type="email" placeholder="Correo electrónico">
+                    <div class="container-textarea">
+                        <textarea required name="form" id="userTextQuestion" value="javier alvites"  maxlength="250" placeholder="Escribe tu pregunta"></textarea>
+                        <label for="userTextQuestion">Escribe tu pregunta</label>
+                        <span>Máximo 250 carácteres</span>
+                    </div>
+                    <div class="container-input">
+                        <input id="userEmailQuestion" required type="email" placeholder="Correo electrónico">
+                        <label for="userEmailQuestion">Correo electrónico</label>
+                    </div>
+                    
                     <button type="submit">Enviar <img src="./images/icons/home-preguntas-arrowblack.svg"></button>
                 </form>
             </div>
@@ -402,8 +410,7 @@
         <div class="btn-menu-mobile-cuenta"><a href="/registro.html"><img src="./images/btn-account-mobile.svg"></a>
         </div>
         <div class="btn-menu-mobile-call"><a href="/"><img src="./images/btn-call-mobile.svg"> </a></div>
-        <div class="btn-menu-mobile" onclick="menuMobileOnClick()">
-        </div>
+        <div class="btn-menu-mobile" onclick="menuMobileOnClick()"></div>
     </div>
     <!-- NAVBAR BOTTOM  MOBILE FIN -->
     <!-- SCRIPTS  -->

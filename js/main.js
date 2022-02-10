@@ -128,7 +128,6 @@ function menuMobileOnClick() {
   document.querySelector(".menu-btn").classList.toggle("change");
   document.querySelector(".menu").classList.toggle("change");
   document.querySelector("nav").classList.toggle("active")
-  console.log("navbar active");
   if (window.scrollY > 0) {
     document.querySelector("nav").classList.toggle("sticky")
   }
