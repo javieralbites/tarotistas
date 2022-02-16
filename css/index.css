@@ -117,7 +117,6 @@
 }
 
 @media (max-width:992px) {
-
     .header-anim-triangle-yellow {
         left: 10%;
         top: 70%;
@@ -735,22 +734,37 @@
 .swiper-testimonio {
     position: relative;
 }
-
+.container-swiperTestimonio-btnNextDesktop{
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(812px + 298px) ;
+    /* height: 200px; */
+    left: 0;
+    right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
 .swiper-testimonio .swiper-wrapper {
-    margin-left: 325px;
+    /* margin-left: 325px; */
 }
 
 .seccion-testimonios .swiper-slide-next {}
 
 .swiper-testimonio-btn-next-desktop {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     top: 0;
     bottom: 0;
-    right: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
-    z-index: 10;
+    right: 15%; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    /* z-index: 10; */
+    position: relative;
+    margin-left: auto;
     width: 114px;
     height: 114px;
     border-radius: 50%;
