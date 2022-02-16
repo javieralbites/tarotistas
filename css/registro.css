@@ -186,6 +186,7 @@
     padding-bottom: 7px;
 }
 
+
 .tab-content form input::placeholder {
     color: transparent;
     user-select: none;
@@ -242,7 +243,7 @@
     transform: scale(.95);
 }
 
-.tab-content form button {
+/* .tab-content form button {
     width: 100%;
     font-size: 16px;
     background-color: #aaa;
@@ -253,8 +254,20 @@
     color: #4e4e4e;
     padding-top: 17px;
     padding-bottom: 17px;
+} */
+.tab-content form button {
+    width: 100%;
+    background-color: #aaa;
+    color: #353535;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    font-size: 24px;
+    font-family: var(--text-rubik);
+    font-weight: var(--text-regular);
+    border: none;
+    padding-top: 20px;padding-bottom: 20px;
+    cursor: pointer;
 }
-
 .content-iniciarSesion>p {
     font-size: 16px;
     line-height: 20px;

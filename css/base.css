@@ -62,7 +62,11 @@ p {
         width: 85%;
     }
 }
-
+@media (max-width:360px) {
+    .container-content {
+        width: 95%;
+    }
+}
 .btn-box-center {
     display: flex;
     justify-content: center;
