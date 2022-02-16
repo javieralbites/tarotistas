@@ -553,14 +553,17 @@ footer {
 
 .btn-menu-mobile-cuenta.active {
     opacity: 0;
+    pointer-events: none;
 }
 
 .btn-menu-mobile-call {
     transition: .2s ease opacity;
+    
 }
 
 .btn-menu-mobile-call.active {
     opacity: 0;
+    pointer-events: none;
 }
 
 .btn-menu-mobile {
