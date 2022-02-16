@@ -8,6 +8,10 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .pageLogin::before {
@@ -45,7 +49,7 @@
 }
 
 .cardLogin {
-    width: 478px;
+    width: 578px;
     background-color: #fff;
     font-family: var(--text-rubik);
     border-radius: 8px;
@@ -89,7 +93,7 @@
 }
 
 .tab-content {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -272,8 +276,8 @@
     margin-top: 20px;
     position: relative;
     line-height: 20px;
+    width: 578px;
 }
-
 .btn-back {
     width: 130px;
     height: 130px;
@@ -382,7 +386,10 @@
         font-size: 12px;
         margin-top: 20px;
     }
-
+    .pageLogin>p {
+        color: #fff;
+        width: 90%;
+    }
     .btn-back {
         display: none;
     }
@@ -393,7 +400,6 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-
     .cardLogin {
         width: 95%;
     }
