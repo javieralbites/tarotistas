@@ -65,7 +65,7 @@
 .tabHeader div {
     width: 50%;
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #e6e6e6;
@@ -111,17 +111,17 @@
 .tab-content .loginfacebook {
     color: #fff;
     background-color: #1877F2;
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     text-align: center;
     margin-bottom: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 19px;
+    padding-bottom: 19px;
 }
 
 .tab-content .loginfacebook img {
@@ -131,15 +131,15 @@
 .tab-content .logingoogle {
     color: #000;
     background-color: var(--color-grey-light);
-    font-weight: var(--text-semibold);
+    font-weight: var(--text-regular);
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 19px;
+    padding-bottom: 19px;
 }
 
 .tab-content .logingoogle img {
@@ -171,20 +171,6 @@
     position: relative;
 }
 
-/* .tab-content form input {
-    display: block;
-    width: 100%;
-    background-color: #e6e6e6;
-    font-weight: var(--text-regular);
-    color: #000;
-    border-radius: 8px;
-    font-size: 16px;
-    border: none;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 7px;
-} */
 .tab-content form input {
     background-color: #E6E6E6;
     width: 100%;
@@ -199,7 +185,6 @@
     font-weight: var(--text-regular);
     font-family: var(--text-rubik);
     margin-bottom: 20px;
-
 }
 
 .tab-content form input::placeholder {
@@ -214,16 +199,6 @@
 }
 
 .tab-content form label {
-    /* display: block;
-    color: #aaa;
-    font-size: 12px;
-    font-family: var(--text-rubik);
-    font-weight: var(--text-medium);
-    position: absolute;
-    top: 8px;
-    left: 20px;
-    transition: .1s linear all; */
-
     color: #aaa;
     font-size: 16px;
     font-weight: var(--text-regular);
@@ -280,7 +255,7 @@
     padding-top: 20px;padding-bottom: 20px;
     cursor: pointer;
 }
-.tab-content form button:hover{
+.tab-content form button:hover, .tab-content .logingoogle:hover, .tab-content .loginfacebook:hover{
     opacity: .9;
 }
 .content-iniciarSesion>p {
@@ -402,8 +377,22 @@
 
     .tab-content form input {
         margin-bottom: 10px;
+        font-size: 16px;
     }
-
+    .tab-content form input:placeholder-shown~label {
+        font-size: 16px;
+    }
+    .tab-content form label {
+        font-size: 12px;
+    }
+    
+    .tab-content form input:focus~label {
+        font-size: 12px;
+    }
+    .tab-content form .btn-password {
+        top: 14px;
+        width: 30px;
+    }
     .tab-content form button {
         font-size: 16px;
         padding-top: 16px;
