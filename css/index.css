@@ -735,12 +735,10 @@
     position: relative;
 }
 .container-swiperTestimonio-btnNextDesktop{
-    /* background-color: red; */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(812px + 298px) ;
-    /* height: 200px; */
+    width: calc(812px + 310px) ;
     left: 0;
     right: 0;
     display: block;
@@ -755,14 +753,6 @@
 .seccion-testimonios .swiper-slide-next {}
 
 .swiper-testimonio-btn-next-desktop {
-    /* position: absolute;
-    bottom: 0;
-    top: 0;
-    bottom: 0;
-    right: 15%; */
-    /* margin-top: auto;
-    margin-bottom: auto; */
-    /* z-index: 10; */
     position: relative;
     margin-left: auto;
     width: 114px;
@@ -862,7 +852,7 @@
     }
 
     .swiper-testimonio .swiper-wrapper {
-        margin-left: 30px;
+        margin-left: 50px;
     }
 
     .seccion-testimonios .swiper-slide-next {
