@@ -1,38 +1,40 @@
-// LOGIN 
+// FORM LOGIN / REGISTRO
+const contentRegistro = document.querySelector(".content-registro")
+const contentInicioSesion = document.querySelector(".content-iniciarSesion")
+const btnRegistro = document.querySelector(".btn-registro")
+const btnInicoSesion = document.querySelector(".btn-inicioSesion")
+
 function registroActive() {
-    document.querySelector(".content-registro").classList.add("active")
-    document.querySelector(".content-iniciarSesion").classList.remove("active")
-    document.querySelector(".btn-registro").classList.add("active")
-    document.querySelector(".btn-inicioSesion").classList.remove("active")
-  }
-  
-  function inicioSesionActive() {
-    document.querySelector(".content-registro").classList.remove("active")
-    document.querySelector(".content-iniciarSesion").classList.add("active")
-    document.querySelector(".btn-registro").classList.remove("active")
-    document.querySelector(".btn-inicioSesion").classList.add("active")
-  }
-  
-  // HIDE PASSWORD 
-  function hidePassSignUp() {
+    contentRegistro.classList.add("active")
+    contentInicioSesion.classList.remove("active")
+    btnRegistro.classList.add("active")
+    btnInicoSesion.classList.remove("active")
+}
+
+function inicioSesionActive() {
+    contentRegistro.classList.remove("active")
+    contentInicioSesion.classList.add("active")
+    btnRegistro.classList.remove("active")
+    btnInicoSesion.classList.add("active")
+}
+
+// HIDE PASSWORD 
+function hidePassSignUp() {
     var userPasswordSignUp = document.getElementById("userPasswordSignUp");
     if (userPasswordSignUp.type == "password") {
-      userPasswordSignUp.type = "text";
+        userPasswordSignUp.type = "text";
     } else {
-      userPasswordSignUp.type = "password";
+        userPasswordSignUp.type = "password";
     }
     document.querySelector(".btn-password").classList.toggle("hidepassword");
-    // if (!userPasswordSignUp.value == "") {
-    //   userPasswordSignUp.focus()
-    // }
-  }
-  
-  function hidePassLogin() {
+}
+
+function hidePassLogin() {
     var userPasswordLogin = document.getElementById("userPasswordLogin");
     if (userPasswordLogin.type == "password") {
-      userPasswordLogin.type = "text";
+        userPasswordLogin.type = "text";
     } else {
-      userPasswordLogin.type = "password";
+        userPasswordLogin.type = "password";
     }
     document.querySelector(".btn-password").classList.toggle("hidepassword");
-  }
+}
