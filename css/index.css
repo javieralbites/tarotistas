@@ -1,10 +1,10 @@
 /* SECCION HEADER  */
 .header {
     position: relative;
-    width: 100%;
     background-color: var(--color-blue);
     overflow: hidden;
     padding-top: 160px;
+    width: 100%;
 }
 
 .header-anim-de-letras {
@@ -117,6 +117,10 @@
 }
 
 @media (max-width:992px) {
+    .header h1 {
+        font-size: 80px;
+    line-height: 75px;
+    }
     .header-anim-triangle-yellow {
         left: 10%;
         top: 70%;
@@ -134,6 +138,8 @@
 
     .header h1 {
         text-align: left;
+        font-size: 35px;
+        line-height: 40px;
     }
 
     .header h1 img {
@@ -287,7 +293,6 @@
     .servicios-back-text {
         font-size: 130px;
     }
-
     .servicios-items {
         width: 90%;
     }
@@ -300,37 +305,23 @@
     }
 
     .servicios-back-text {
-        top: 200px;
-        font-size: 80px;
+        display: none;
     }
-
     .servicios .btn-box-center {
         justify-content: center;
     }
-
-    .servicio-item {
+    .servicio-item-img{
         width: 200px;
+        height: 200px;
     }
-
     .servicio-item p {
-        font-size: 24px;
-    }
-
-}
-
-@media (max-width:716px) {
-    .servicio-item {
-        width: 180px;
+        /* font-size: 24px; */
     }
 }
 
 @media (max-width:688px) {
     .servicios h1 {
         display: block;
-    }
-
-    .servicios-back-text {
-        display: none;
     }
 
     .servicios-items {
@@ -583,7 +574,6 @@
     color: #000;
     box-shadow: inset 0 0 0 2px #000;
 }
-
 
 .seccion-tarotistas .btn-box-center {
     justify-content: center;
@@ -1146,11 +1136,14 @@
 
     .seccion-preguntas form input[type=email]:placeholder-shown~label {
         top: 15px;
+        font-size: 16px;
     }
     .container-input label,  .seccion-preguntas form input[type=email]:focus~label{
         top: 7px;
     }
-    
+    .seccion-preguntas form textarea:placeholder-shown~label {
+        font-size: 16px;
+    }
     .seccion-preguntas form button {
         font-size: 16px;
         padding: 18px 27px;
