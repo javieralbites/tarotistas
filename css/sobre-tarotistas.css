@@ -1,6 +1,5 @@
 /* NAVBAR  */
 nav .logo{
-    /* background-image: url(../images/logo2.png); */
     background-image: url(../images/logo-tarotistas-mobile.svg);
 }
 .nav-links a:first-of-type{
@@ -43,7 +42,7 @@ nav.active .menu-btn .bar {
         background-image: url(../images/logo-tarotistas-mobile.svg);
     }
 }
-/* NAVBAR fin */
+/* NAVBAR FIN */
 /* SOBRE TAROTISTAS HEADER  */
 .sobre-tarotistas-header{
     background-color: #fff;
@@ -106,7 +105,7 @@ nav.active .menu-btn .bar {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.sobre-tarotistas-about-flex{
+.sobre-tarotistas-about-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,13 +114,12 @@ nav.active .menu-btn .bar {
     color: var(--color-blue);
 }
 .sobre-tarotistas-about img{
-    max-width: 150px;
-    transform: scale(2) translateY(-50px) translateX(0px);
+    max-width: 190px;
+    transform: scale(1.2) translateY(-85px) translateX(-20px);
 }   
 @media (max-width:1200px) {
     .sobre-tarotistas-about img{
         max-width: 120px;
-        transform: scale(2) translateY(-50px) translateX(-30px);
     } 
 }
 @media (max-width:992px) {
@@ -129,9 +127,7 @@ nav.active .menu-btn .bar {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    .sobre-tarotistas-about-flex{
-        display: flex;
-        justify-content: space-between;
+    .sobre-tarotistas-about-content{
         align-items: flex-start;
         flex-direction: column;
     }
@@ -139,17 +135,12 @@ nav.active .menu-btn .bar {
        margin-bottom: 20px;
     }
     .sobre-tarotistas-about img{
-        display: none;
+        display: block;
+        transform: scale(.9) translateY(-50px) translateX(180px) rotate(55deg);
     }   
     .sobre-tarotistas-about p br{
         display: none;
     }
-}
-@media (max-width:688px) {
-    .sobre-tarotistas-about img{
-        display: block;
-        transform: scale(.9) translateY(-50px) translateX(180px) rotate(55deg);
-    }  
 }
 /* SOBRE TAROTISTAS ABOUT FIN */
 /* SOBRE TAROTISTAS FAQ  */
