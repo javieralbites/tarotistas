@@ -495,7 +495,14 @@
         top: 40%;
     }
 }
-
+@media (max-width:360px) {
+    .step{
+        font-size: 16px;
+    }
+    .arrow-white-top-mobile, .arrow-white-bottom-mobile{
+        right: 70px;
+    }
+}
 /* SECCION PASOS FIN  */
 /* SECCION-TAROTISTAS  */
 .seccion-tarotistas {
@@ -946,7 +953,9 @@
         height: 30px;
         width: 30px;
     }
-    
+    .swiper-testimonio .swiper-wrapper {
+        margin-left: 10px;
+    }
 }
 @media (max-height:740px) {
     .home-testimonios-slides-buttons-mobile {
@@ -1172,15 +1181,23 @@
     }
 
     .seccion-preguntas form input[type=email]:placeholder-shown~label {
-        top: 15px;
+        top: 19px;
         font-size: 16px;
     }
     .container-input label,  .seccion-preguntas form input[type=email]:focus~label{
         top: 7px;
     }
+    .container-input label, .seccion-preguntas form input[type=email]:focus~label {
+        font-size: 12px;
+    }
+
     .seccion-preguntas form textarea:placeholder-shown~label {
         font-size: 16px;
     }
+    .container-textarea label, .seccion-preguntas form textarea:focus~label {
+        font-size: 12px;
+    }
+
     .seccion-preguntas form button {
         font-size: 16px;
         padding: 18px 27px;
@@ -1196,7 +1213,7 @@
         padding-right: 40px;
     }
     .seccion-preguntas form textarea:placeholder-shown~label, .seccion-preguntas form input[type=email]:placeholder-shown~label {
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 }
 
@@ -1264,5 +1281,4 @@
         justify-content: center;
     }
 }
-
-/* SECCION EMPIEZA AQUI FIN*/
+  

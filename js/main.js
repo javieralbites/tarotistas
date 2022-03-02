@@ -111,7 +111,7 @@ function menuMobileOnClick() {
 // SLIDES HOME TESTIMONIO
 var swiperHome = new Swiper(".swiper-testimonio", {
   slidesPerView: "auto",
-  spaceBetween: 30,
+  spaceBetween: 10,
   centeredSlides: false,
   loop: true,
   navigation: {
@@ -125,6 +125,9 @@ var swiperHome = new Swiper(".swiper-testimonio", {
     },
     992: {
       spaceBetween: 100,
+    },
+    360:{
+      spaceBetween: 30,
     }
   }
 });
