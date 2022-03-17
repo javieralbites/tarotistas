@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/perfil.css">
+</head>
+
+<body>
+    <div class="perfil-container">
+        <div class="perfil-navigation">
+            <img class="perfil-navigation-logo" src="./images/logo-tarotistas-mobile.svg" alt="">
+            <ul>
+                <li class="tab-button active" data-id="miPerfil">
+                    <div class="icon">
+                        <img class="icon-normal" src="./images/icons/perfil-miPerfil.svg" alt="">
+                        <img class="icon-active" src="./images/icons/perfil-miPerfil-active.svg" alt="">
+                    </div>
+                    Mi Perfil
+                </li>
+                <li class="tab-button" data-id="zoom">
+                    <div class="icon">
+                        <img class="icon-normal" src="./images/icons/perfil-zoom.svg" alt="">
+                        <img class="icon-active" src="./images/icons/perfil-zoom-active.svg" alt="">
+                    </div>
+                    Zoom
+                </li>
+                <li class="tab-button" data-id="sesiones">
+                    <div class="icon">
+                        <img class="icon-normal" src="./images/icons/perfil-sesiones.svg" alt="">
+                        <img class="icon-active" src="./images/icons/perfil-sesiones-active.svg" alt="">
+                    </div>
+                    Sesiones
+                </li>
+                <li class="tab-button" data-id="pagos">
+                    <div class="icon">
+                        <img class="icon-normal" src="./images/icons/perfil-pagos.svg" alt="">
+                        <img class="icon-active" src="./images/icons/perfil-pagos-active.svg" alt="">
+                    </div>
+                    Pagos
+                </li>
+            </ul>
+        </div>
+        <div class="perfil-content">
+            <div class="content active" id="miPerfil">
+                <div class="perfil-content-nav">
+                    <div>
+                        <h3><span class="name-grey">Carla Smith</span> / Mi Perfil</h3>
+                        <h3 class="text-blue">Mi Perfil</h3>
+                    </div>
+                    <a href="/" class="btn-inicio"><img src="./images/icons/moon-blue.svg" alt=""> REGRESAR AL
+                        INICIO</a>
+                </div>
+                <div class="perfil-content-cont">
+                    <div>
+                        <div class="perfil-photo">
+                            <img src="./images/user.png" alt="">
+                            Carla Smith
+                        </div>
+                        <div>
+                            <div>
+                                <div class="container-input">
+                                    <input type="text" value="Carla Smith">
+                                    <label for="">NOMBRE DE USUARIO</label>
+                                </div>
+                                
+                                <button>Editar</button> 
+                            </div>
+                            <div>
+                                <div class="container-input">
+                                    <input type="email">
+                                    <label for="">CORREO ELECTRÓNICO</label>
+                                </div>
+                                
+                                <button>Editar</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Cambiar Contraseña</h3>
+                        <h3>Introduce tu contraseña actual y una nueva contraseña.</h3>
+                        <input type="text">
+                        <input type="password" name="" id="">
+                        <input type="password" name="" id="">
+                        <button type="submit" disabled>Cambiar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="zoom">
+
+                <div class="perfil-content-nav">
+                    <div>
+                        <h3><span class="name-grey">Carla Smith</span> / Zoom</h3>
+                        <h3 class="text-blue">Zoom</h3>
+                    </div>
+                    <a href="/" class="btn-inicio"><img src="./images/icons/moon-blue.svg" alt=""> REGRESAR AL
+                        INICIO</a>
+                </div>
+                <div class="perfil-content-cont">
+                    <div class="btn-sesionZoom">Sesión de Zoom</div>
+                </div>
+            </div>
+            <div class="content" id="sesiones">
+                <div class="perfil-content-nav">
+                    <div>
+                        <h3><span class="name-grey">Carla Smith</span> / Mis Sesiones</h3>
+                        <h3 class="text-blue">Mis Sesiones</h3>
+                    </div>
+                    <a href="/" class="btn-inicio"><img src="./images/icons/moon-blue.svg" alt=""> REGRESAR AL
+                        INICIO</a>
+                </div>
+                <div class="perfil-content-cont">
+                
+                </div>
+            </div>
+            <div class="content" id="pagos">
+                <div class="perfil-content-nav">
+                    <div>
+                        <h3><span class="name-grey">Carla Smith</span> / Mis Pagos</h3>
+                        <h3 class="text-blue">Mis Pagos</h3>
+                    </div>
+                    <a href="/" class="btn-inicio"><img src="./images/icons/moon-blue.svg" alt=""> REGRESAR AL
+                        INICIO</a>
+                </div>
+                <div class="perfil-content-cont">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/perfil.js"></script>
+    <script>
+        document.addEventListener('click', (e) => {
+            console.log(e);
+        })
+    </script>
+</body>
+
+</html>

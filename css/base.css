@@ -67,20 +67,27 @@ h1 {
     font-family: var(--text-rubik);
     font-weight: var(--text-semibold);
 }
-
+h3{
+    font-size: 24px;
+    font-weight: var(--text-regular);
+}
 p {
     font-size: 35px;
     line-height: 40px;
     font-family: var(--text-rubik);
     font-weight: var(--text-regular);
 }
-
+.text-blue{
+    color: var(--color-blue);
+}
 @media (max-width:992px) {
     h1 {
         font-size: 35px;
         line-height: 40px;
     }
-
+    h3{
+        font-size: 16px;
+    }
     p {
         font-size: 24px;
         line-height: 30px;

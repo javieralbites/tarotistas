@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.465" height="39.999" viewBox="0 0 26.465 39.999">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-554.055 54.688)">
+    <path id="Trazado_1200" data-name="Trazado 1200" d="M155.732,342.06h-2.645l-.237,19.428a13.231,13.231,0,0,0,13.233,13.231h0a13.231,13.231,0,0,0,13.232-13.231v-9H176.4s-1.567,4.947-1.594,5.382l-1.033-20.639h-2.677s-1.23,10.876-1.356,13.106l-.243-15.617h-3.409s-.6,8.7-.6,16.669l-1.044-16.524h-3.116s-.791,15.348-.839,17.668l-.65-14.673H157.4s-1.11,13.228-1.206,15.86Z" transform="translate(401.205 -389.408)"/>
+    <g id="Layer_1" data-name="Layer 1" transform="translate(559.105 -37.645)">
+      <path id="Trazado_893" data-name="Trazado 893" d="M8.183,158.38A10.439,10.439,0,0,0,0,162.351c2.417,2.417,4.777,4.707,8.183,4.707s5.788-2.313,8.183-4.707A10.44,10.44,0,0,0,8.183,158.38Z" transform="translate(0 -152.756)" fill="#e6e6e6"/>
+      <circle id="Elipse_76" data-name="Elipse 76" cx="3.675" cy="3.675" r="3.675" transform="translate(4.508 6.288)" fill="#3e0cf2"/>
+      <circle id="Elipse_77" data-name="Elipse 77" cx="2.117" cy="2.117" r="2.117" transform="translate(6.066 7.845)"/>
+      <circle id="Elipse_78" data-name="Elipse 78" cx="0.606" cy="0.606" r="0.606" transform="translate(7.577 9.356)" fill="#e6e6e6"/>
+    </g>
+  </g>
+</svg>

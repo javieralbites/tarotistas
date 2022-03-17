@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Grupo_481" data-name="Grupo 481" transform="translate(-24 -16)">
+    <rect id="Rectángulo_2459" data-name="Rectángulo 2459" width="40" height="40" rx="8" transform="translate(24 16)" fill="#aaa"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(27.094 24.881)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(2 1)">
+        <path id="Trazado_1204" data-name="Trazado 1204" d="M6.074,21.238H1.621A.621.621,0,0,1,1,20.616V1.621A.621.621,0,0,1,1.621,1H6.074" transform="translate(-1 -1)" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_1205" data-name="Trazado 1205" d="M208.84,1h4.454a.621.621,0,0,1,.621.621V20.616a.621.621,0,0,1-.621.621H208.84" transform="translate(-184.103 -1)" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <circle id="Elipse_236" data-name="Elipse 236" cx="2.664" cy="2.664" r="2.664" transform="translate(12.283 7.455)" fill="#e6e6e6"/>
+        <circle id="Elipse_237" data-name="Elipse 237" cx="7.023" cy="7.023" r="7.023" transform="translate(7.926 3.096)" fill="none" stroke="#efefef" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.737" height="29.086" viewBox="0 0 36.737 29.086">
+  <g id="zoomldpi" transform="translate(1.656 21.97)">
+    <g id="Layer_2_00000021097627502124008060000012369043880511176366_" transform="translate(0.126 -16.957)">
+      <g id="Layer_1-2">
+        <path id="Trazado_1218" data-name="Trazado 1218" d="M1.379,0H19.471A5.332,5.332,0,0,1,24.8,5.325V17.641a1.375,1.375,0,0,1-1.379,1.379H5.325A5.332,5.332,0,0,1,0,13.7V1.379A1.375,1.375,0,0,1,1.379,0Z" fill="#aaa"/>
+        <path id="Trazado_1219" data-name="Trazado 1219" d="M198.892,19.4l-7.414-5.366a1.152,1.152,0,0,1-.478-.942V7.107a1.171,1.171,0,0,1,.464-.928L198.879.716a.628.628,0,0,1,.874.123.6.6,0,0,1,.123.369V18.89a.624.624,0,0,1-.614.628A.7.7,0,0,1,198.892,19.4Z" transform="translate(-164.92 -0.512)" fill="#aaa"/>
+      </g>
+    </g>
+    <path id="Trazado_1220" data-name="Trazado 1220" d="M26.629-18.325c2.1-1.346,3.615-1.876,4.13-1.361,1.255,1.255-3.706,8.274-11.088,15.656S5.27,8.328,4.015,7.072c-.424-.424-.136-1.513.711-3.04" transform="translate(-4.493 -1.112)" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Elipse_241" data-name="Elipse 241" cx="3.25" cy="3.25" r="3.25" transform="translate(3.84 -1.186)" fill="#e6e6e6"/>
+    <circle id="Elipse_242" data-name="Elipse 242" cx="4.758" cy="4.758" r="4.758" transform="translate(14.564 -14.56)" fill="#efefef"/>
+    <circle id="Elipse_240" data-name="Elipse 240" cx="1.718" cy="1.718" r="1.718" transform="translate(12.892 -18.675)" fill="#353535"/>
+  </g>
+</svg>
