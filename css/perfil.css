@@ -6,14 +6,23 @@
 }
 .perfil-navigation{
     background-color: #EFEFEF;
+    position: relative;
     padding-right: 30px;
     padding-left: 30px;
     /* position: fixed; */
+}
+.perfil-navigation > div{
+    position: fixed;
+    width: 221px;
+    /* width: 100%; */
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 .perfil-navigation-logo{
     width: 100%;
     margin-top: 30px;
     margin-bottom: 100px;
+    /* background-color: red; */
 }
 .perfil-navigation li{
     display: flex;
@@ -98,7 +107,45 @@ li.active .icon-active{
 #miPerfil .perfil-content-cont{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 100px;
 }
+
+#miPerfil .perfil-datos{
+    margin-top: 40px;
+    background-color: #EFEFEF;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.perfil-datos-usuario{
+    display: flex;
+    align-items: center;
+}
+.perfil-datos button{
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.perfil-datos-email{
+    display: flex;
+    align-items: center;
+}
+.perfil-datos-usuario button{
+    /* background-color: #000;
+    color: #fff;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px; */
+}
+
 .btn-sesionZoom{
     font-size: 24px;
     color: #000;
@@ -112,4 +159,78 @@ li.active .icon-active{
 .btn-sesionZoom:hover{
     background-color: #000;
     color: #fff;
+}
+#sesiones .perfil-content-cont{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.perfil-sesiones-card{
+    width: 362px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.perfil-sesiones-card.pendiente{
+    border: 2px solid var(--color-blue);
+}
+
+.perfil-sesiones-card-img{
+    height: 176px;
+}
+.perfil-sesiones-card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.perfil-sesiones-card-content{
+    padding: 20px;
+    font-size: 24px;
+    background-color: #EFEFEF;
+}
+.perfil-sesiones-card-content .estado{
+    color: #aaa;
+}
+.perfil-sesiones-card.pendiente .estado{
+    color: var(--color-blue);
+}
+.perfil-sesiones-card-content div{
+    margin-bottom: 5px;
+}
+
+.perfil-pagos-card-desc{
+    display: flex;
+    align-items: center;
+}
+.perfil-pagos-card-img{
+    width: 148px;
+    height: 148px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.perfil-pagos-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+@media (max-width:992px) {
+    table{
+        width: 100%;
+    }
+}
+table tr{
+    border-bottom: 1px  solid #e6e6e6;
+}
+
+table th h3{
+    color: #aaa;
+    text-align: left;
+    padding: 20px 0px;
+}
+table td {
+    padding: 20px 0px;
 }

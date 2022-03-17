@@ -13,37 +13,41 @@
 <body>
     <div class="perfil-container">
         <div class="perfil-navigation">
-            <img class="perfil-navigation-logo" src="./images/logo-tarotistas-mobile.svg" alt="">
-            <ul>
-                <li class="tab-button active" data-id="miPerfil">
-                    <div class="icon">
-                        <img class="icon-normal" src="./images/icons/perfil-miPerfil.svg" alt="">
-                        <img class="icon-active" src="./images/icons/perfil-miPerfil-active.svg" alt="">
-                    </div>
-                    Mi Perfil
-                </li>
-                <li class="tab-button" data-id="zoom">
-                    <div class="icon">
-                        <img class="icon-normal" src="./images/icons/perfil-zoom.svg" alt="">
-                        <img class="icon-active" src="./images/icons/perfil-zoom-active.svg" alt="">
-                    </div>
-                    Zoom
-                </li>
-                <li class="tab-button" data-id="sesiones">
-                    <div class="icon">
-                        <img class="icon-normal" src="./images/icons/perfil-sesiones.svg" alt="">
-                        <img class="icon-active" src="./images/icons/perfil-sesiones-active.svg" alt="">
-                    </div>
-                    Sesiones
-                </li>
-                <li class="tab-button" data-id="pagos">
-                    <div class="icon">
-                        <img class="icon-normal" src="./images/icons/perfil-pagos.svg" alt="">
-                        <img class="icon-active" src="./images/icons/perfil-pagos-active.svg" alt="">
-                    </div>
-                    Pagos
-                </li>
-            </ul>
+            <div>
+
+
+                <img class="perfil-navigation-logo" src="./images/logo-tarotistas-mobile.svg" alt="">
+                <ul>
+                    <li class="tab-button active" data-id="miPerfil">
+                        <div class="icon">
+                            <img class="icon-normal" src="./images/icons/perfil-miPerfil.svg" alt="">
+                            <img class="icon-active" src="./images/icons/perfil-miPerfil-active.svg" alt="">
+                        </div>
+                        Mi Perfil
+                    </li>
+                    <li class="tab-button" data-id="zoom">
+                        <div class="icon">
+                            <img class="icon-normal" src="./images/icons/perfil-zoom.svg" alt="">
+                            <img class="icon-active" src="./images/icons/perfil-zoom-active.svg" alt="">
+                        </div>
+                        Zoom
+                    </li>
+                    <li class="tab-button" data-id="sesiones">
+                        <div class="icon">
+                            <img class="icon-normal" src="./images/icons/perfil-sesiones.svg" alt="">
+                            <img class="icon-active" src="./images/icons/perfil-sesiones-active.svg" alt="">
+                        </div>
+                        Sesiones
+                    </li>
+                    <li class="tab-button" data-id="pagos">
+                        <div class="icon">
+                            <img class="icon-normal" src="./images/icons/perfil-pagos.svg" alt="">
+                            <img class="icon-active" src="./images/icons/perfil-pagos-active.svg" alt="">
+                        </div>
+                        Pagos
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="perfil-content">
             <div class="content active" id="miPerfil">
@@ -61,22 +65,22 @@
                             <img src="./images/user.png" alt="">
                             Carla Smith
                         </div>
-                        <div>
-                            <div>
+                        <div class="perfil-datos">
+                            <div class="perfil-datos-usuario">
                                 <div class="container-input">
                                     <input type="text" value="Carla Smith">
                                     <label for="">NOMBRE DE USUARIO</label>
                                 </div>
-                                
-                                <button>Editar</button> 
+
+                                <button>Editar</button>
                             </div>
-                            <div>
+                            <div class="perfil-datos-email">
                                 <div class="container-input">
                                     <input type="email">
                                     <label for="">CORREO ELECTRÓNICO</label>
                                 </div>
-                                
-                                <button>Editar</button> 
+
+                                <button>Editar</button>
                             </div>
                         </div>
                     </div>
@@ -114,7 +118,66 @@
                         INICIO</a>
                 </div>
                 <div class="perfil-content-cont">
-                
+                    <div class="perfil-sesiones-card pendiente">
+                        <div class="perfil-sesiones-card-img">
+                            <img src="./images/tarotistas/tarotista-slide01.png" alt="">
+                        </div>
+                        <div class="perfil-sesiones-card-content">
+                            <div>Nombre Tarotista 1</div>
+                            <div class="estado">Pendiente</div>
+                            <div>Jueves 12 de Enero</div>
+                            <div>xx:xx am</div>
+                            <div>10 min</div>
+                        </div>
+                    </div>
+                    <div class="perfil-sesiones-card">
+                        <div class="perfil-sesiones-card-img">
+                            <img src="./images/tarotistas/tarotista-2.png" alt="">
+                        </div>
+                        <div class="perfil-sesiones-card-content">
+                            <div>Nombre Tarotista 2</div>
+                            <div class="estado">Pasado</div>
+                            <div>Jueves 12 de Enero</div>
+                            <div>xx:xx am</div>
+                            <div>10 min</div>
+                        </div>
+                    </div>
+                    <div class="perfil-sesiones-card">
+                        <div class="perfil-sesiones-card-img">
+                            <img src="./images/tarotistas/tarotista-3.png" alt="">
+                        </div>
+                        <div class="perfil-sesiones-card-content">
+                            <div>Nombre Tarotista 3</div>
+                            <div class="estado">Pasado</div>
+                            <div>Jueves 12 de Enero</div>
+                            <div>xx:xx am</div>
+                            <div>10 min</div>
+                        </div>
+                    </div>
+                    <div class="perfil-sesiones-card">
+                        <div class="perfil-sesiones-card-img">
+                            <img src="./images/tarotistas/tarotista-2.png" alt="">
+                        </div>
+                        <div class="perfil-sesiones-card-content">
+                            <div>Nombre Tarotista 2</div>
+                            <div class="estado">Pasado</div>
+                            <div>Jueves 12 de Enero</div>
+                            <div>xx:xx am</div>
+                            <div>10 min</div>
+                        </div>
+                    </div>
+                    <div class="perfil-sesiones-card">
+                        <div class="perfil-sesiones-card-img">
+                            <img src="./images/tarotistas/tarotista-3.png" alt="">
+                        </div>
+                        <div class="perfil-sesiones-card-content">
+                            <div>Nombre Tarotista 3</div>
+                            <div class="estado">Pasado</div>
+                            <div>Jueves 12 de Enero</div>
+                            <div>xx:xx am</div>
+                            <div>10 min</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="content" id="pagos">
@@ -127,7 +190,79 @@
                         INICIO</a>
                 </div>
                 <div class="perfil-content-cont">
-                
+                    <table>
+
+                        <tr>
+                            <th>
+                                <h3>Descripción</h3>
+                            </th>
+                            <th>
+                                <h3>Tarifa/Tiempo</h3>
+                            </th>
+                            <th>
+                                <h3>Monto</h3>
+                            </th>
+                        </tr>
+
+                        <tr class="perfil-pagos-card">
+                            <td class="perfil-pagos-card-desc">
+                                <div class="perfil-pagos-card-img">
+                                    <img src="./images/tarotistas/tarotista-slide01.png" alt="">
+                                </div>
+                                <div>
+                                    <h3>Nombre de Tarotista 01</h3>
+                                    <h3>Viernes 05 de Noviembre</h3>
+                                    <h3>xx:xx pm</h3>
+                                </div>
+                            </td>
+                            <td class="perfil-pagos-card-tarifa">
+                                <h3 class="text-blue">Arcana Mayor</h3>
+                                <h3>20 min.</h3>
+                            </td>
+                            <td class="perfil-pagos-card-monto">
+                                <h3>USD 19.5</h3>
+                            </td>
+                        </tr>
+
+                        <tr class="perfil-pagos-card">
+                            <td class="perfil-pagos-card-desc">
+                                <div class="perfil-pagos-card-img">
+                                    <img src="./images/tarotistas/tarotista-2.png" alt="">
+                                </div>
+                                <div>
+                                    <h3>Nombre de Tarotista 02</h3>
+                                    <h3>Viernes 05 de Noviembre</h3>
+                                    <h3>xx:xx pm</h3>
+                                </div>
+                            </td>
+                            <td class="perfil-pagos-card-tarifa">
+                                <h3 class="text-blue">Arcana Mayor</h3>
+                                <h3>20 min.</h3>
+                            </td>
+                            <td class="perfil-pagos-card-monto">
+                                <h3>USD 19.5</h3>
+                            </td>
+                        </tr>
+                        <tr class="perfil-pagos-card">
+                            <td class="perfil-pagos-card-desc">
+                                <div class="perfil-pagos-card-img">
+                                    <img src="./images/tarotistas/tarotista-3.png" alt="">
+                                </div>
+                                <div>
+                                    <h3>Nombre de Tarotista 03</h3>
+                                    <h3>Viernes 05 de Noviembre</h3>
+                                    <h3>xx:xx pm</h3>
+                                </div>
+                            </td>
+                            <td class="perfil-pagos-card-tarifa">
+                                <h3 class="text-blue">Arcana Mayor</h3>
+                                <h3>20 min.</h3>
+                            </td>
+                            <td class="perfil-pagos-card-monto">
+                                <h3>USD 19.5</h3>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
