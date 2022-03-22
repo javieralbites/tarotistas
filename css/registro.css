@@ -254,9 +254,14 @@
     border: none;
     padding-top: 20px;padding-bottom: 20px;
     cursor: pointer;
+    transition: .1s ease;
 }
-.tab-content form button:hover, .tab-content .logingoogle:hover, .tab-content .loginfacebook:hover{
+ .tab-content .logingoogle:hover, .tab-content .loginfacebook:hover{
     opacity: .9;
+}
+.tab-content form button:hover{
+    background-color: #000;
+    color: #fff;
 }
 .content-iniciarSesion>p {
     font-size: 16px;

@@ -4,12 +4,23 @@
     min-height: 100vh;
     font-family: var(--text-rubik);
 }
+
 .perfil-navigation{
     background-color: #EFEFEF;
     position: relative;
     padding-right: 30px;
     padding-left: 30px;
     /* position: fixed; */
+}
+@media (max-width:992px) {
+    .perfil-container{
+        display: grid;
+        grid-template-columns:  1fr;
+        min-height: 100vh;
+    }
+    .perfil-navigation{
+        display: none;
+    }
 }
 .perfil-navigation > div{
     position: fixed;
@@ -61,10 +72,10 @@ li.active .icon-normal{
 li.active .icon-active{
     display: block;
 }
-.content{
+.perfil-content .content{
     display: none;
 }
-.content.active{
+.perfil-content .content.active{
     display: block;
 }
 .btn-inicio{
@@ -109,7 +120,17 @@ li.active .icon-active{
     grid-template-columns: 1fr 1fr;
     gap: 100px;
 }
-
+@media (max-width:1200px) {
+    #miPerfil .perfil-content-cont{
+        gap: 20px;
+    }
+}
+@media (max-width:992px) {
+    #miPerfil .perfil-content-cont{
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+}
 #miPerfil .perfil-datos{
     margin-top: 40px;
     background-color: #EFEFEF;
@@ -120,11 +141,18 @@ li.active .icon-active{
 .perfil-datos-usuario{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom:10px;
 }
 .perfil-datos button{
     background-color: #000;
     color: #fff;
-    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 130px;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -134,16 +162,116 @@ li.active .icon-active{
 .perfil-datos-email{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
-.perfil-datos-usuario button{
-    /* background-color: #000;
-    color: #fff;
-    padding: 15px;
+
+.container-input{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 5px 15px;
+}
+.container-input input{
+    width: 100%;
+    font-size: 24px;
+    border:none;
+    margin-top: 5px;
+}
+.container-input input:focus{
+    border: none;
     outline: none;
+}
+.container-input label{
+    color: #aaa;
+    font-size: 16px;
+}
+.disabled .container-input{
+    background-color: transparent;
+    border: none;
+}
+.disabled input{
+    background-color: transparent;
+    user-select: none;
+    pointer-events: none;
+}
+
+.container-input-password{
+    position: relative;
+}
+.container-input-password input[type="password"]{
+    /* height: 70px; */
+    width: 100%;
+    background-color: #E6E6E6;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    border: none;
+    font-size: 24px;
+    font-weight: var(--text-regular);
+    font-family: var(--text-rubik);
+    margin-bottom: 20px;
+}
+.container-input-password label{
+    position: absolute;
+}
+.container-input-password input::placeholder {
+    color: transparent;
+    user-select: none;
+}
+.container-input-password input:placeholder-shown~label {
+    top: 20px;
+    cursor: text;
+    font-size: 24px;
+}
+.container-input-password label {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: var(--text-regular);
+    font-family: var(--text-rubik);
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    transition: .1s linear all;
+    pointer-events: none;
+    user-select: none;
+}
+.container-input-password input:focus~label {
+    top: 8px;
+    font-size: 16px;
+}
+.container-input-password input:focus {
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 0 2px #000;
+    background-color: #fff;
+}
+#miPerfil form{
+    margin-top: 30px;
+}
+#miPerfil form button{
+    background-color: #aaa;
+    color: #000;
+    padding: 20px;
+    font-size: 24px;
     border: none;
     border-radius: 8px;
+    float: right;
+    transition: .2s ease;
     cursor: pointer;
-    font-size: 24px; */
+}
+#miPerfil form button:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 .btn-sesionZoom{
@@ -151,7 +279,7 @@ li.active .icon-active{
     color: #000;
     background-color: #aaa;
     border-radius: 8px;
-    padding: 15px 30px;
+    padding: 20px;
     display: inline-block;
     cursor: pointer;
     transition: .2s ease;

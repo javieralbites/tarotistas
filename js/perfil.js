@@ -17,3 +17,27 @@ tabs.onclick = e => {
     element.classList.add("active");
   }
 }
+
+const perfilDatosUsuario = document.querySelector(".perfil-datos-usuario")
+const btnPerfilUsuario = document.querySelector(".perfil-datos-usuario-btn")
+btnPerfilUsuario.addEventListener("click", () => {
+  if (perfilDatosUsuario.classList.contains("disabled") ) {
+    perfilDatosUsuario.classList.remove("disabled")
+    btnPerfilUsuario.innerHTML="Guardar"
+  } else {
+    perfilDatosUsuario.classList.add("disabled")
+    btnPerfilUsuario.innerHTML="Editar"
+  }
+})
+
+const perfilDatosEmail = document.querySelector(".perfil-datos-email")
+const btnPerfilEmail = document.querySelector(".perfil-datos-email-btn")
+btnPerfilEmail.addEventListener("click", () => {
+  if (perfilDatosEmail.classList.contains("disabled") ) {
+    perfilDatosEmail.classList.remove("disabled")
+    btnPerfilEmail.innerHTML="Guardar"
+  } else {
+    perfilDatosEmail.classList.add("disabled")
+    btnPerfilEmail.innerHTML="Editar"
+  }
+})

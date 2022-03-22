@@ -66,31 +66,43 @@
                             Carla Smith
                         </div>
                         <div class="perfil-datos">
-                            <div class="perfil-datos-usuario">
+                            <div id="perfil-datos-usuario" class="perfil-datos-usuario disabled">
                                 <div class="container-input">
-                                    <input type="text" value="Carla Smith">
                                     <label for="">NOMBRE DE USUARIO</label>
+                                    <input type="text"  value="Carla Smith">
                                 </div>
-
-                                <button>Editar</button>
+                                <button class="perfil-datos-usuario-btn">Editar</button>
                             </div>
-                            <div class="perfil-datos-email">
+                            <div id="perfil-datos-email" class="perfil-datos-email disabled">
                                 <div class="container-input">
-                                    <input type="email">
                                     <label for="">CORREO ELECTRÓNICO</label>
+                                    <input type="email" value="carla@gmail.com">
                                 </div>
+                                <button class="perfil-datos-email-btn">Editar</button>
+                            </div>
+                            <div class="perfil-datos-number">
 
-                                <button>Editar</button>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="perfil-cambiarContraseña">
                         <h3>Cambiar Contraseña</h3>
                         <h3>Introduce tu contraseña actual y una nueva contraseña.</h3>
-                        <input type="text">
-                        <input type="password" name="" id="">
-                        <input type="password" name="" id="">
-                        <button type="submit" disabled>Cambiar</button>
+                        <form action="cambiarPassword">
+                            <div class="container-input-password">
+                                <input type="password" placeholder="Contraseña Actual" required>
+                                <label>Contraseña Actual</label>
+                            </div>
+                            <div class="container-input-password">
+                                <input type="password" placeholder="Nueva Contraseña" required>
+                                <label>Nueva Contraseña</label>
+                            </div>
+                            <div class="container-input-password">
+                                <input type="password" placeholder="Confirmar Nueva Contraseña" required>
+                                <label>Confirmar Nueva Contraseña</label>
+                            </div>           
+                            <button type="submit" >Cambiar</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -197,7 +209,7 @@
                                 <h3>Descripción</h3>
                             </th>
                             <th>
-                                <h3>Tarifa/Tiempo</h3>
+                                <h3>Tarifa / Tiempo</h3>
                             </th>
                             <th>
                                 <h3>Monto</h3>
@@ -268,11 +280,7 @@
         </div>
     </div>
     <script src="./js/perfil.js"></script>
-    <script>
-        document.addEventListener('click', (e) => {
-            console.log(e);
-        })
-    </script>
+
 </body>
 
 </html>
