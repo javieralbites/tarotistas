@@ -15,7 +15,6 @@
         <div class="perfil-navigation">
             <div>
 
-
                 <img class="perfil-navigation-logo" src="./images/logo-tarotistas-mobile.svg" alt="">
                 <ul>
                     <li class="tab-button active" data-id="miPerfil">
@@ -46,6 +45,14 @@
                         </div>
                         Pagos
                     </li>
+                    <a href="/">
+                        <li class="tab-button">
+                                <div class="icon">
+                                    <img class="icon-normal icon-close" src="./images/icons/close-faq.svg" alt="">
+                                </div>
+                                Cerrar <br> Sesión
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -66,22 +73,26 @@
                             Carla Smith
                         </div>
                         <div class="perfil-datos">
-                            <div id="perfil-datos-usuario" class="perfil-datos-usuario disabled">
+                            <div  class="perfil-datos-usuario disabled">
                                 <div class="container-input">
                                     <label for="">NOMBRE DE USUARIO</label>
                                     <input type="text"  value="Carla Smith">
                                 </div>
                                 <button class="perfil-datos-usuario-btn">Editar</button>
                             </div>
-                            <div id="perfil-datos-email" class="perfil-datos-email disabled">
+                            <div  class="perfil-datos-email disabled">
                                 <div class="container-input">
                                     <label for="">CORREO ELECTRÓNICO</label>
                                     <input type="email" value="carla@gmail.com">
                                 </div>
                                 <button class="perfil-datos-email-btn">Editar</button>
                             </div>
-                            <div class="perfil-datos-number">
-
+                            <div class="perfil-datos-phone disabled" >
+                                <div class="container-input">
+                                    <label for="">NÚMERO DE TELÉFONO</label>
+                                    <input type="tel" value="999 99999" pattern="+[0-9]{3}-[0-9]{9}" >
+                                </div>
+                                <button class="perfil-datos-phone-btn" onclick="saveUserPhone()">Editar</button>
                             </div>
                         </div>
                     </div>

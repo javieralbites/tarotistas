@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 0.5,
     ease: 'power4'
   })
-  tl.from('.nav-container .logo', {
-    opacity: 0,
-    duration: 1
-  })
-  tl.from('.nav-links a ', {
-    opacity: 0,
-    duration: 1,
-    stagger: .2
-  })
+  // tl.from('.nav-container .logo', {
+  //   opacity: 0,
+  //   duration: 1
+  // })
+  // tl.from('.nav-links a ', {
+  //   opacity: 0,
+  //   duration: 1,
+  //   stagger: .2
+  // })
 })
 
 // NAV 

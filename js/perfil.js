@@ -41,3 +41,19 @@ btnPerfilEmail.addEventListener("click", () => {
     btnPerfilEmail.innerHTML="Editar"
   }
 })
+
+
+function saveUserPhone() {
+  const perfilDatosPhone = document.querySelector(".perfil-datos-phone")
+const btnPerfilPhone = document.querySelector(".perfil-datos-phone-btn")
+// btnPerfilEmail.addEventListener("click", () => {
+  if (perfilDatosPhone.classList.contains("disabled") ) {
+    perfilDatosPhone.classList.remove("disabled")
+    btnPerfilPhone.innerHTML="Guardar"
+  } else {
+    perfilDatosPhone.classList.add("disabled")
+    btnPerfilPhone.innerHTML="Editar"
+  }
+// })
+
+}

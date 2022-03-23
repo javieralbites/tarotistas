@@ -35,6 +35,11 @@
     margin-bottom: 100px;
     /* background-color: red; */
 }
+.perfil-navigation a, .perfil-navigation a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
 .perfil-navigation li{
     display: flex;
     align-items: center;
@@ -46,10 +51,10 @@
     border-radius: 8px;
     font-size: 24px;
 }
-li:hover{
+.perfil-navigation li:hover{
     background-color: #fff;
 }
-li.active{
+.perfil-navigation li.active{
     background-color: #fff;
 }
 .perfil-navigation li .icon{
@@ -60,16 +65,20 @@ li.active{
     justify-content: end;
     margin-right: 15px;
 }
-.icon .icon-normal{
+.perfil-navigation .icon .icon-normal{
     display: block;
 }
-.icon  .icon-active{
+.perfil-navigation .icon  .icon-active{
     display: none;
 }
-li.active .icon-normal{
+
+.perfil-navigation .icon .icon-close{
+    transform: rotate(45deg);
+}
+.perfil-navigation li.active .icon-normal{
     display: none;
 }
-li.active .icon-active{
+.perfil-navigation li.active .icon-active{
     display: block;
 }
 .perfil-content .content{
@@ -164,8 +173,14 @@ li.active .icon-active{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 10px;
 }
-
+.perfil-datos-phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
 .container-input{
     position: relative;
     width: 100%;

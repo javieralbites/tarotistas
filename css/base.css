@@ -267,7 +267,8 @@ nav .logo {
     }
 
     nav .logo {
-        background-image: url(../images/logo-tarotistas-mobile.svg);
+        /* background-image: url(../images/logo-tarotistas-mobile.svg); */
+        background-image: url(../images/logos/tarotistas-latinos-grayldpi.svg);
     }
 }
 
