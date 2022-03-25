@@ -2,6 +2,7 @@
 nav .logo{
     /* background-image: url(../images/logo3.png); */
     /* background-image: url(../images/logos/tarotistas-latinos-whiteldpi.svg); */
+    background-image: url(../images/logos/tarotistas-latinos-grayldpi.svg);
 }
 .nav-links a:first-of-type{
     color: var(--color-blue);

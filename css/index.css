@@ -813,8 +813,11 @@
 
 .swiper-testimonio-btn-next-desktop img {
     width: 70%;
+    user-select: none;
 }
-
+.swiper-testimonio-btn-next-desktop:hover img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
 .swiper-testimonio-btn-next-desktop:active {
     transform: scale(.8);
 }
@@ -825,7 +828,7 @@
     height: 100%;
     border-radius: 50%;
     -moz-border-radius: 50%;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-blue);
     position: absolute;
     z-index: -1;
     left: -100%;
