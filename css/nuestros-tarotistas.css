@@ -322,8 +322,16 @@ nav.active .menu-btn .bar, nav.sticky .menu-btn .bar{
     gap: 30px;
 }
 
+.tarotista-card-img{
+    -webkit-mask: url(../images/tarotistas/blackmask.png);
+  -webkit-mask-size: 101%;
+}
+.tarotista-card-img:hover img{
+    transform: scale(1.05);
+}
 .tarotista-card-img img {
     width: 100%;
+    transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
 }
 
 .tarotista-card-content {
