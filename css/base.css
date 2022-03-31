@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--text-rubik);
 }
 
 :root {
@@ -70,6 +71,7 @@ h1 {
 h3{
     font-size: 24px;
     font-weight: var(--text-regular);
+    font-family: var(--text-rubik);
 }
 p {
     font-size: 35px;
@@ -194,7 +196,6 @@ nav .logo {
     height: 60px;
     width: 230px;
     display: inline-block;
-    /* background-image: url(../images/logo.png); */
     background-image: url(../images/logos/tarotistas-latinos-whiteldpi.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -267,7 +268,6 @@ nav .logo {
     }
 
     nav .logo {
-        /* background-image: url(../images/logo-tarotistas-mobile.svg); */
         background-image: url(../images/logos/tarotistas-latinos-grayldpi.svg);
     }
 }

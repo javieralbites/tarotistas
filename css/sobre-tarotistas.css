@@ -20,7 +20,7 @@ nav.sticky {
     background-color: #fff;
 }
 nav.active .logo {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logos/tarotistas-latinos-whiteldpi.svg);
 }
 nav.active .nav-links a:first-of-type{
     color: #fff;
@@ -37,10 +37,10 @@ nav.active .menu-btn .bar {
 }
 @media (max-width:992px) {
     nav.active .logo{
-        background-image: url(../images/logo-tarotistas-mobile.svg);
+        background-image: url(../images/logos/tarotistas-latinos-grayldpi.svg);
     }
     nav .logo{
-        background-image: url(../images/logo-tarotistas-mobile.svg);
+        background-image: url(../images/logos/tarotistas-latinos-grayldpi.svg);
     }
 }
 /* NAVBAR FIN */

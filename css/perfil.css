@@ -10,7 +10,6 @@
     position: relative;
     padding-right: 30px;
     padding-left: 30px;
-    /* position: fixed; */
 }
 @media (max-width:992px) {
     .perfil-container{
@@ -25,15 +24,11 @@
 .perfil-navigation > div{
     position: fixed;
     width: 221px;
-    /* width: 100%; */
-    /* margin-right: auto;
-    margin-left: auto; */
 }
 .perfil-navigation-logo{
     width: 100%;
     margin-top: 30px;
     margin-bottom: 100px;
-    /* background-color: red; */
 }
 .perfil-navigation a, .perfil-navigation a:visited{
     color: #000;
@@ -45,7 +40,6 @@
     align-items: center;
     cursor: pointer;
     margin-bottom: 10px;
-    /* width: 80%; */
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
@@ -221,7 +215,6 @@
     position: relative;
 }
 .container-input-password input[type="password"]{
-    /* height: 70px; */
     width: 100%;
     background-color: #E6E6E6;
     border-radius: 8px;
